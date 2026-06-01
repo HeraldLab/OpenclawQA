@@ -30,7 +30,7 @@ def main() -> int:
     data = json.loads(run_path.read_text())
     data["tag"] = tag
     data["created_at"] = data.get("created_at") or datetime.now(timezone.utc).isoformat()
-    data["links"]["github_run_folder"] = f"https://github.com/HeraldLabs/openclawQA/tree/main/runs/{tag}"
+    data["links"]["github_run_folder"] = f"https://github.com/HeraldLab/OpenclawQA/tree/main/runs/{tag}"
     run_path.write_text(json.dumps(data, indent=2) + "\n")
     print(dest)
     return 0
