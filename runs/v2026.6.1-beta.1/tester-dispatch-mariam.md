@@ -34,4 +34,21 @@ Wait for Mariam to reply with report or blocker. If no response within the SLA w
 
 ## Clarification needed
 
-The initial dispatch did not explicitly say whether repo access was required or how upstream filing works. Follow-up clarification should state: no repo write access is needed; report in Discord; Herald Labs/Book will validate, dedupe, and file confirmed upstream `openclaw/openclaw` issues using the Herald Labs account.
+Resolved by access/reporting clarification message `1511069820060307486` in thread `1511069188960292895`.
+
+## Access/reporting clarification
+
+Sent after Henry asked whether testers need repo access and how reports reach Herald Labs.
+
+- Thread ID: `1511069188960292895`
+- Message ID: `1511069820060307486`
+- Sent at: `2026-06-01T18:11:59.422000+00:00`
+- Readback verified: `true`
+
+Clarification sent:
+
+- Mariam does **not** need write access to `HeraldLab/OpenclawQA`.
+- She should reply in the Discord thread with checklist statuses and evidence links.
+- Herald Labs/Book will validate, dedupe, and file confirmed upstream issues into `openclaw/openclaw` using the Herald Labs account.
+- Optional public QA repo issue form: https://github.com/HeraldLab/OpenclawQA/issues/new/choose
+- Do not file directly into `openclaw/openclaw` unless asked.

@@ -25,5 +25,13 @@
     },
     "public_route_used": "discord:#openclaw with direct mention"
   },
-  "response_status": "pending"
+  "response_status": "pending",
+  "access_reporting_clarification": {
+    "sent": true,
+    "thread_id": "1511069188960292895",
+    "message_id": "1511069820060307486",
+    "sent_at": "2026-06-01T18:11:59.422000+00:00",
+    "readback_verified": true,
+    "summary": "No repo write access needed; report in Discord thread; Herald Labs validates/dedupes/files upstream using Herald Labs account; optional public QA repo issue form."
+  }
 }
