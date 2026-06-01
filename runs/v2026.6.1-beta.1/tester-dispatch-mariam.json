@@ -1,0 +1,29 @@
+{
+  "target_tag": "v2026.6.1-beta.1",
+  "tester": {
+    "name": "Mariam",
+    "discord_user_id": "1151723886971473971",
+    "discord_username": "miriampeter_26511"
+  },
+  "approved_by": "Henry / HiM",
+  "approval_source": "Discord thread 1510982876508979210",
+  "freshness_check": {
+    "checked_at": "2026-06-01T18:09:06Z",
+    "latest_beta": "v2026.6.1-beta.1",
+    "superseded": false,
+    "decision": "PASS_SEND_ALLOWED"
+  },
+  "dispatch": {
+    "platform": "discord",
+    "channel_id": "1506198862526939247",
+    "message_id": "1511069188960292895",
+    "sent_at": "2026-06-01T18:09:28.956000+00:00",
+    "readback_verified": true,
+    "direct_dm_attempt": {
+      "target": "discord:1151723886971473971",
+      "result": "failed_unknown_channel"
+    },
+    "public_route_used": "discord:#openclaw with direct mention"
+  },
+  "response_status": "pending"
+}

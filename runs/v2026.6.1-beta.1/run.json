@@ -1,7 +1,7 @@
 {
   "tag": "v2026.6.1-beta.1",
   "repo": "openclaw/openclaw",
-  "status": "manual_qa_pre_dispatch_pending_human_signoff",
+  "status": "manual_qa_dispatched_pending_mariam_report",
   "owner_agent": "book",
   "created_at": "2026-06-01T14:58:36.861211+00:00",
   "freshness": {
@@ -30,7 +30,9 @@
     "pre-send-freshness-recheck.md",
     "manual-qa-checklist.md",
     "review-gate-report.md",
-    "workflow-status-vs-v4.md"
+    "workflow-status-vs-v4.md",
+    "tester-dispatch-mariam.json",
+    "tester-dispatch-mariam.md"
   ],
   "tester_instructions_generated_at": "2026-06-01T16:29:58Z",
   "closeout_generated_at": "2026-06-01T16:29:59Z"
