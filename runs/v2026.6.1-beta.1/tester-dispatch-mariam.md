@@ -1,6 +1,6 @@
 # Tester Dispatch Receipt — Mariam — OpenClaw `v2026.6.1-beta.1`
 
-Status: **sent, awaiting report**
+Status: **sent to correct Mariam thread, awaiting report**
 
 ## Approval
 
@@ -17,38 +17,37 @@ Status: **sent, awaiting report**
 ## Recipient
 
 - Mariam: `<@1151723886971473971>` / `miriampeter_26511`
+- Correct thread supplied by Henry: `1510234021052026880`
 
-## Dispatch
+## Correction / deletion
+
+Henry identified `1510234021052026880` as Mariam's actual thread and instructed Book to delete the wrong message and resend there.
+
+Deleted wrong messages:
+
+- Wrong parent `#openclaw` dispatch: channel `1506198862526939247`, message `1511069188960292895` — deleted `204`
+- Wrong accidental thread clarification: channel/thread `1511069188960292895`, message `1511069820060307486` — deleted `204`
+
+Readback after deletion showed the parent `#openclaw` feed no longer contained Book's wrong dispatch; accidental thread no longer contained Book's clarification.
+
+## Correct resend
 
 - Platform: Discord
-- Channel ID: `1506198862526939247`
-- Message ID: `1511069188960292895`
-- Sent at: `2026-06-01T18:09:28.956000+00:00`
+- Thread ID: `1510234021052026880`
+- Message ID: `1511072106908090378`
+- Sent at: `2026-06-01T18:21:04.649000+00:00`
 - Readback verified: `true`
 
-Direct DM attempt to `discord:1151723886971473971` failed with `Unknown Channel`, so the approved public route was used: `discord:#openclaw` with Mariam mentioned.
+The correct message includes:
+
+- beta target and freshness
+- checklist/run links
+- no repo write access required
+- report in this Discord thread
+- Herald Labs/Book will validate, dedupe, and file confirmed upstream issues into `openclaw/openclaw` using the Herald Labs account
+- optional public QA issue form
+- do not file directly into `openclaw/openclaw` unless asked
 
 ## Next required action
 
-Wait for Mariam to reply with report or blocker. If no response within the SLA window, send one concise follow-up or escalate according to the HeraldLabs tester SLA.
-
-## Clarification needed
-
-Resolved by access/reporting clarification message `1511069820060307486` in thread `1511069188960292895`.
-
-## Access/reporting clarification
-
-Sent after Henry asked whether testers need repo access and how reports reach Herald Labs.
-
-- Thread ID: `1511069188960292895`
-- Message ID: `1511069820060307486`
-- Sent at: `2026-06-01T18:11:59.422000+00:00`
-- Readback verified: `true`
-
-Clarification sent:
-
-- Mariam does **not** need write access to `HeraldLab/OpenclawQA`.
-- She should reply in the Discord thread with checklist statuses and evidence links.
-- Herald Labs/Book will validate, dedupe, and file confirmed upstream issues into `openclaw/openclaw` using the Herald Labs account.
-- Optional public QA repo issue form: https://github.com/HeraldLab/OpenclawQA/issues/new/choose
-- Do not file directly into `openclaw/openclaw` unless asked.
+Wait for Mariam to reply with report or blocker. If no response within the SLA window from the corrected resend, send one concise follow-up or escalate according to the HeraldLabs tester SLA.

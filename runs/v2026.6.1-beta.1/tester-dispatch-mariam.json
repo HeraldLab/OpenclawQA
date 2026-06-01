@@ -15,23 +15,43 @@
   },
   "dispatch": {
     "platform": "discord",
-    "channel_id": "1506198862526939247",
-    "message_id": "1511069188960292895",
-    "sent_at": "2026-06-01T18:09:28.956000+00:00",
+    "channel_id": "1510234021052026880",
+    "message_id": "1511072106908090378",
+    "sent_at": "2026-06-01T18:21:04.649000+00:00",
     "readback_verified": true,
-    "direct_dm_attempt": {
-      "target": "discord:1151723886971473971",
-      "result": "failed_unknown_channel"
-    },
-    "public_route_used": "discord:#openclaw with direct mention"
+    "route_used": "Mariam actual Discord thread supplied by Henry"
   },
   "response_status": "pending",
   "access_reporting_clarification": {
     "sent": true,
-    "thread_id": "1511069188960292895",
-    "message_id": "1511069820060307486",
-    "sent_at": "2026-06-01T18:11:59.422000+00:00",
+    "thread_id": "1510234021052026880",
+    "message_id": "1511072106908090378",
+    "sent_at": "2026-06-01T18:21:04.649000+00:00",
     "readback_verified": true,
     "summary": "No repo write access needed; report in Discord thread; Herald Labs validates/dedupes/files upstream using Herald Labs account; optional public QA repo issue form."
+  },
+  "correction": {
+    "reason": "Henry identified actual Mariam thread as 1510234021052026880; prior send was in parent #openclaw / accidental thread.",
+    "deleted_wrong_messages": [
+      {
+        "channel_id": "1506198862526939247",
+        "message_id": "1511069188960292895",
+        "label": "wrong parent #openclaw dispatch",
+        "deleted": true
+      },
+      {
+        "channel_id": "1511069188960292895",
+        "message_id": "1511069820060307486",
+        "label": "wrong accidental thread clarification",
+        "deleted": true
+      }
+    ],
+    "correct_resend": {
+      "thread_id": "1510234021052026880",
+      "message_id": "1511072106908090378",
+      "sent_at": "2026-06-01T18:21:04.649000+00:00",
+      "readback_verified": true,
+      "contains_access_reporting_clarification": true
+    }
   }
 }
