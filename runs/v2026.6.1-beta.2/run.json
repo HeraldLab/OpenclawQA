@@ -31,7 +31,8 @@
     "receipts/collect-reports.json",
     "receipts/issue-dedupe.json",
     "receipts/issue-file-results.json",
-    "receipts/approval-thread-dispatch.json"
+    "receipts/approval-thread-dispatch.json",
+    "receipts/approval-thread-resend-20260601T232448Z.json"
   ],
   "tester_instructions_generated_at": "2026-06-01T22:00:14Z",
   "qa_checklist_completed_at": "2026-06-01T22:00:16Z",
@@ -44,5 +45,6 @@
   "approval_message_ids_readback": [
     "1511148173505331283",
     "1511148175937900687"
-  ]
+  ],
+  "latest_approval_resend_message_id": "1511148541395865866"
 }

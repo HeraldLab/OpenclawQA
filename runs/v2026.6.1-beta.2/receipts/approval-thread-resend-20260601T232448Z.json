@@ -1,0 +1,13 @@
+{
+  "type": "approval_thread_resend",
+  "tag": "v2026.6.1-beta.2",
+  "approval_thread_id": "1511147437329485977",
+  "message_id": "1511148541395865866",
+  "sent_via": "Ada/OpenClaw owner path",
+  "sent_at": "2026-06-01T23:24:48Z",
+  "reason": "Henry explicitly asked: send beta2 again there",
+  "prior_approval_message_ids_readback": [
+    "1511148173505331283",
+    "1511148175937900687"
+  ]
+}
