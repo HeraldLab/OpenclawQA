@@ -40,5 +40,9 @@
   "dispatch_review_target_channel_id": "1510745618757193748",
   "closeout_generated_at": "2026-06-01T22:00:15Z",
   "approval_thread_id": "1511147437329485977",
-  "approval_message_id": "1511148175937900687"
+  "approval_message_id": "1511148175937900687",
+  "approval_message_ids_readback": [
+    "1511148173505331283",
+    "1511148175937900687"
+  ]
 }
