@@ -64,6 +64,7 @@ Review target/freshness:
 - Checklist: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/manual-qa-checklist.md
 
 Please run the checklist with screen recording on.
+No repo write access is needed. Reply in Discord with the report; Herald Labs will dedupe and file validated upstream OpenClaw issues using our account.
 For every row, report: `PASS`, `FAIL`, `BLOCKED`, or `NOT RUN`.
 
 Required environment header:

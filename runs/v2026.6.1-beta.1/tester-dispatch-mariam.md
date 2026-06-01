@@ -31,3 +31,7 @@ Direct DM attempt to `discord:1151723886971473971` failed with `Unknown Channel`
 ## Next required action
 
 Wait for Mariam to reply with report or blocker. If no response within the SLA window, send one concise follow-up or escalate according to the HeraldLabs tester SLA.
+
+## Clarification needed
+
+The initial dispatch did not explicitly say whether repo access was required or how upstream filing works. Follow-up clarification should state: no repo write access is needed; report in Discord; Herald Labs/Book will validate, dedupe, and file confirmed upstream `openclaw/openclaw` issues using the Herald Labs account.

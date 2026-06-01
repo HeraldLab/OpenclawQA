@@ -6,6 +6,23 @@ Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-be
 Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose  
 Deadline: **48 hours after dispatch**
 
+
+## Access and Reporting Route
+
+You do **not** need write access to the `HeraldLab/OpenclawQA` repo to participate.
+
+Preferred reporting path:
+
+1. Reply in the Discord thread/channel where you were tagged with your checklist statuses and evidence links.
+2. Book/Herald Labs will collect the report, validate it, dedupe it against existing OpenClaw issues, and file any confirmed upstream issue into `openclaw/openclaw` using the Herald Labs account.
+
+Optional path if you have a GitHub account:
+
+- You may also file a tester report in the public QA repo: https://github.com/HeraldLab/OpenclawQA/issues/new/choose
+- Repo access beyond normal public GitHub access is not required.
+
+Do **not** file directly into `openclaw/openclaw` unless asked. We want one deduped upstream issue per validated bug, not duplicate tester reports.
+
 ## Target
 
 Test OpenClaw beta release `v2026.6.1-beta.1`. This is a manual QA pass for release confidence, not a general support thread.
