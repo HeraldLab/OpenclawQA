@@ -1,0 +1,17 @@
+{
+  "tag": "v2026.6.1-beta.1",
+  "checked_at": "2026-06-01T20:27:34Z",
+  "discord_channel_id": "1510234021052026880",
+  "tester": {
+    "user_id": "1151723886971473971",
+    "username": "miriampeter_26511",
+    "mention": "<@1151723886971473971>"
+  },
+  "corrected_dispatch_message_id": "1511072106908090378",
+  "mariam_reply_after_dispatch_found": false,
+  "preexisting_followup_after_dispatch_found": false,
+  "followup_sent": true,
+  "followup_message_id": "1511103833793630349",
+  "followup_content": "<@1151723886971473971> Quick check on OpenClaw `v2026.6.1-beta.1` QA: please reply with your report, or `BLOCKED` plus exact command/error/screenshot/logs.",
+  "notes": "Fetched the latest 50 messages from the actual Discord thread before sending. Corrected dispatch was the newest message at that time, so no tester reply or existing follow-up appeared after it. Verified follow-up message present after send."
+}
