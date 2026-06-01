@@ -1,0 +1,10 @@
+{
+  "type": "approval_thread_dispatch",
+  "tag": "v2026.6.1-beta.2",
+  "approval_thread_id": "1511147437329485977",
+  "message_id": "1511148175937900687",
+  "sent_via": "Ada/OpenClaw owner path",
+  "sent_at": "2026-06-01T23:23:21Z",
+  "reason": "Henry directed approval crons to use thread 1511147437329485977",
+  "prior_manager_thread_approval_message_id": "1511128925693284352"
+}

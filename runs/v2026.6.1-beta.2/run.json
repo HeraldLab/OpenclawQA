@@ -30,12 +30,15 @@
     "receipts/github-fetch.json",
     "receipts/collect-reports.json",
     "receipts/issue-dedupe.json",
-    "receipts/issue-file-results.json"
+    "receipts/issue-file-results.json",
+    "receipts/approval-thread-dispatch.json"
   ],
   "tester_instructions_generated_at": "2026-06-01T22:00:14Z",
   "qa_checklist_completed_at": "2026-06-01T22:00:16Z",
   "adversarial_review_completed_at": "2026-06-01T22:00:16Z",
   "dispatch_review_requested_at": "2026-06-01T22:06:51Z",
   "dispatch_review_target_channel_id": "1510745618757193748",
-  "closeout_generated_at": "2026-06-01T22:00:15Z"
+  "closeout_generated_at": "2026-06-01T22:00:15Z",
+  "approval_thread_id": "1511147437329485977",
+  "approval_message_id": "1511148175937900687"
 }
