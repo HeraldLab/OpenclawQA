@@ -19,3 +19,4 @@ jobs:
         with:
           python-version: '3.x'
       - run: python scripts/validate-run.py
+      - run: python -m unittest discover -s tests -p 'test_*.py'

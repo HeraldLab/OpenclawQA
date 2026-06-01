@@ -1,0 +1,28 @@
+{
+  "tag": "v2026.6.1-beta.1",
+  "deduped_at": "2026-06-01T16:29:59Z",
+  "upstream_repo": "openclaw/openclaw",
+  "results": [
+    {
+      "report": {
+        "number": 1,
+        "title": "[Workflow smoke]: v2026.6.1-beta.1 collector/dedupe dry-run",
+        "url": "https://github.com/HeraldLab/OpenclawQA/issues/1",
+        "state": "closed",
+        "labels": [
+          "status:validated",
+          "area:install"
+        ],
+        "status": "status:validated",
+        "author": "h-mascot",
+        "created_at": "2026-06-01T16:25:15Z",
+        "updated_at": "2026-06-01T16:25:16Z",
+        "has_evidence": true,
+        "body_chars": 750
+      },
+      "query": "repo:openclaw/openclaw is:issue Workflow v2026 1-beta collector dedupe",
+      "candidate_count": 0,
+      "candidates": []
+    }
+  ]
+}
