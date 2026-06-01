@@ -16,7 +16,6 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 | Tag | Status | Folder | Instructions | Closeout |
 |---|---|---|---|---|
 | `v2026.6.1-beta.1` | manual_qa_pre_dispatch_pending_human_signoff | [folder](runs/v2026.6.1-beta.1/) | [instructions](runs/v2026.6.1-beta.1/tester-instructions.md) | [closeout](runs/v2026.6.1-beta.1/closeout-report.md) |
-| `v2099.1.1-beta.1` | instructions_ready | [folder](runs/v2099.1.1-beta.1/) | [instructions](runs/v2099.1.1-beta.1/tester-instructions.md) | [closeout](runs/v2099.1.1-beta.1/closeout-report.md) |
 
 ## Tester Flow
 
