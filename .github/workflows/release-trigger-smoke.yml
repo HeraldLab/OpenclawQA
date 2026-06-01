@@ -1,0 +1,20 @@
+name: Release trigger smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Alpha/beta tag to simulate
+        required: true
+        default: v2026.6.1-beta.1
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/create-run.py "${{ inputs.tag }}"
+      - run: python scripts/validate-run.py "${{ inputs.tag }}"

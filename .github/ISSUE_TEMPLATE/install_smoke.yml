@@ -1,0 +1,33 @@
+name: Install smoke result
+description: Report install/upgrade smoke-test results for a target alpha/beta tag.
+title: "[Install smoke]: "
+labels:
+  - status:needs-triage
+  - area:install
+body:
+  - type: input
+    id: target_tag
+    attributes:
+      label: Target tag
+      placeholder: v2026.6.1-beta.1
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS / platform
+    validations:
+      required: true
+  - type: input
+    id: install_command
+    attributes:
+      label: Install/upgrade command used
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Include gateway/TUI/first-chat smoke result, logs, and screenshots if relevant.
+    validations:
+      required: true

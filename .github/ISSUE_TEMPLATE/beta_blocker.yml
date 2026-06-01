@@ -1,0 +1,63 @@
+name: Beta blocker
+description: Report a release-blocking issue in an OpenClaw alpha/beta validation run.
+title: "Beta blocker: <component> - <summary>"
+labels:
+  - status:needs-triage
+  - severity:blocker
+  - beta-blocker
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this only for issues that block alpha/beta release validation.
+        Keep answers evidence-grounded. Use `NOT_ENOUGH_INFO` when a fact is unavailable.
+  - type: input
+    id: target_tag
+    attributes:
+      label: Target tag
+      placeholder: v2026.6.1-beta.1
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Component / plugin / surface
+      placeholder: gateway, telegram, discord, installer, TUI, memory, model routing
+    validations:
+      required: true
+  - type: textarea
+    id: blocker_summary
+    attributes:
+      label: Why this blocks release validation
+    validations:
+      required: true
+  - type: textarea
+    id: exact_failure
+    attributes:
+      label: Exact failure path / command / UI action
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS / platform
+    validations:
+      required: true
+  - type: input
+    id: install_method
+    attributes:
+      label: Install or upgrade method
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screen recording, screenshots
+    validations:
+      required: true

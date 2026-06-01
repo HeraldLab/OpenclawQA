@@ -1,0 +1,25 @@
+{
+  "tag": "TEMPLATE",
+  "repo": "openclaw/openclaw",
+  "status": "created",
+  "owner_agent": "book",
+  "created_at": null,
+  "freshness": {
+    "trigger_checked_at": null,
+    "pre_send_checked_at": null,
+    "primary_target": null,
+    "stable_baseline": null,
+    "prior_prerelease_baseline": null,
+    "latest_alpha": null,
+    "latest_beta": null
+  },
+  "links": {
+    "github_run_folder": null,
+    "github_pages_run": null,
+    "discord_thread": null,
+    "entity_internal_card": null
+  },
+  "testers": [],
+  "upstream_issues": [],
+  "receipts": []
+}
