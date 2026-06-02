@@ -1,12 +1,12 @@
 {
   "tag": "v2026.6.1-beta.2",
   "repo": "openclaw/openclaw",
-  "status": "awaiting_dispatch_approval",
+  "status": "beta2_dispatched_to_mariam_anny_ayomide_pending_reports",
   "owner_agent": "book",
   "created_at": "2026-06-01T22:00:11.102288+00:00",
   "freshness": {
     "trigger_checked_at": "2026-06-01T22:00:14Z",
-    "pre_send_checked_at": null,
+    "pre_send_checked_at": "2026-06-02T01:19:48Z",
     "primary_target": "v2026.6.1-beta.2",
     "stable_baseline": "v2026.5.28",
     "prior_prerelease_baseline": "v2026.6.1-beta.1",
@@ -22,7 +22,12 @@
       "1511128925693284352",
       "1511128927618334760"
     ],
-    "entity_internal_card": null
+    "entity_internal_card": null,
+    "discord_release_threads": {
+      "mariam": "1510234021052026880",
+      "anny": "1511018659131297933",
+      "ayomide": "1511018652361822329"
+    }
   },
   "testers": [],
   "upstream_issues": [],
@@ -32,7 +37,8 @@
     "receipts/issue-dedupe.json",
     "receipts/issue-file-results.json",
     "receipts/approval-thread-dispatch.json",
-    "receipts/approval-thread-resend-20260601T232448Z.json"
+    "receipts/approval-thread-resend-20260601T232448Z.json",
+    "receipts/tester-dispatch-anny-ayomide-mariam.json"
   ],
   "tester_instructions_generated_at": "2026-06-01T22:00:14Z",
   "qa_checklist_completed_at": "2026-06-01T22:00:16Z",
@@ -46,5 +52,16 @@
     "1511148173505331283",
     "1511148175937900687"
   ],
-  "latest_approval_resend_message_id": "1511148541395865866"
+  "latest_approval_resend_message_id": "1511148541395865866",
+  "latest_tester_dispatch_at": "2026-06-02T01:19:48Z",
+  "latest_tester_dispatch_targets": [
+    "mariampeter",
+    "annywrld",
+    "ayomide"
+  ],
+  "latest_tester_dispatch_message_ids": [
+    "1511177223137267742",
+    "1511177255081087017",
+    "1511177288077672460"
+  ]
 }

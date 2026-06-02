@@ -1,0 +1,28 @@
+{
+  "type": "beta2_tester_dispatch",
+  "tag": "v2026.6.1-beta.2",
+  "dispatched_at": "2026-06-02T01:19:48Z",
+  "latest_beta_at_dispatch": "v2026.6.1-beta.2",
+  "sent_via": "Ada/OpenClaw owner path (SuperAda visible author)",
+  "targets": [
+    {
+      "name": "Mariam",
+      "thread_id": "1510234021052026880",
+      "message_id": "1511177223137267742",
+      "note": "Told Mariam to skip the scenario already passed earlier unless beta2 behaves differently."
+    },
+    {
+      "name": "Anny",
+      "thread_id": "1511018659131297933",
+      "message_id": "1511177255081087017",
+      "note": "Setup marked done by Henry; sent beta2 packet."
+    },
+    {
+      "name": "Ayomide",
+      "thread_id": "1511018652361822329",
+      "message_id": "1511177288077672460",
+      "note": "Setup marked done by Henry; sent beta2 packet."
+    }
+  ],
+  "sender_warning": "OpenClaw CLI on Ada host reported config written by 2026.5.31-beta.4 but command running 2026.5.28; delivery readback succeeded. Do not use this sender runtime as the beta2 QA runtime."
+}

@@ -2,5 +2,27 @@
   "tag": "v2026.6.1-beta.2",
   "collected_at": "2026-06-01T22:00:15Z",
   "repo": "HeraldLab/OpenclawQA",
-  "reports": []
+  "reports": [],
+  "dispatched_at": "2026-06-02T01:19:48Z",
+  "assigned_testers": [
+    {
+      "tester_id": "miriampeter",
+      "thread_id": "1510234021052026880",
+      "dispatch_message_id": "1511177223137267742",
+      "status": "pending_report",
+      "note": "skip already-passed scenario"
+    },
+    {
+      "tester_id": "annywrld",
+      "thread_id": "1511018659131297933",
+      "dispatch_message_id": "1511177255081087017",
+      "status": "pending_beta2_report"
+    },
+    {
+      "tester_id": "ayomide",
+      "thread_id": "1511018652361822329",
+      "dispatch_message_id": "1511177288077672460",
+      "status": "pending_beta2_report"
+    }
+  ]
 }

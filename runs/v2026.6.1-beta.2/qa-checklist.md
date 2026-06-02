@@ -11,10 +11,10 @@ Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-be
 - [x] Tester instructions generated.
 - [x] Adversarial review completed.
 - [x] Live upstream issue filing remains disabled by default.
-- [ ] Henry approved public tester dispatch.
-- [ ] Pre-send freshness rerun after approval.
-- [ ] Ada-owned public dispatch sent once.
-- [ ] Discord release thread/message IDs recorded.
+- [x] Henry approved public tester dispatch.
+- [x] Pre-send freshness rerun after approval.
+- [x] Ada-owned public dispatch sent once.
+- [x] Discord release thread/message IDs recorded.
 
 ## Required tester evidence
 
