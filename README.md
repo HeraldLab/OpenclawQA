@@ -22,7 +22,7 @@ Core rule: **human QA is the release gate; automation is support/preflight.**
 |---|---|---|---|---|
 | `v2026.6.1-beta.1` | manual_qa_dispatched_to_correct_mariam_thread_pending_report | [folder](runs/v2026.6.1-beta.1/) | [instructions](runs/v2026.6.1-beta.1/tester-instructions.md) | [closeout](runs/v2026.6.1-beta.1/closeout-report.md) |
 | `v2026.6.1-beta.2` | beta2_dispatched_to_mariam_anny_ayomide_pending_reports | [folder](runs/v2026.6.1-beta.2/) | [instructions](runs/v2026.6.1-beta.2/tester-instructions.md) | [closeout](runs/v2026.6.1-beta.2/closeout-report.md) |
-| `v2026.6.1-beta.3` | targeted_dispatch_two_threads_evidence_collection | [folder](runs/v2026.6.1-beta.3/) | [instructions](runs/v2026.6.1-beta.3/tester-instructions.md) | [closeout](runs/v2026.6.1-beta.3/closeout-report.md) |
+| `v2026.6.1-beta.3` | instructions_ready | [folder](runs/v2026.6.1-beta.3/) | [instructions](runs/v2026.6.1-beta.3/tester-instructions.md) | [closeout](runs/v2026.6.1-beta.3/closeout-report.md) |
 
 ## Tester Flow
 
