@@ -131,12 +131,14 @@ Before sending testers, reject the packet if:
 Produce:
 
 1. Release summary
-2. Commit coverage matrix
-3. P0 baseline checklist
-4. Release-specific depth checklist
-5. Tester assignment matrix
-6. Evidence requirements
-7. Evidence review acceptance gate
+2. Baseline P0 checklist
+3. Baseline P1 checklist
+4. Delta coverage matrix
+5. Delta P0 human scenarios
+6. Delta P1/P2 human scenarios
+7. Tester assignment matrix
+8. Evidence requirements
+9. Evidence review acceptance gate
 
 ## Verification Checklist
 

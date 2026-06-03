@@ -33,6 +33,8 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 
 - Use `scripts/create-run.py <tag>` to create or refresh a run folder.
 - Use `scripts/fetch-openclaw-release-context.py <tag>` for freshness context.
+- Use `docs/baseline-human-qa-checklist.md` for always-run Baseline P0/P1 manual QA.
+- Use `docs/release-delta-qa-policy.md` to generate release-specific Delta P0/P1/P2 manual QA from the actual release changes.
 - Use `templates/release-qa-generation-prompt.md` to generate a commit-aware human QA checklist from the release notes, compare diff, commits, PRs, and issue signals.
 - Use `docs/human-qaqc-testing-playbook.md` so tester packets are hands-on manual QA scenarios, not automated command checks.
 - Pull concrete channel/plugin/provider/state/error cards from `docs/human-scenario-library.md`; do not invent shallow “test it works” rows.

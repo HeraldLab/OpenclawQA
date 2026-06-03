@@ -15,6 +15,10 @@ Input release:
 Task:
 Review the latest OpenClaw release and every commit included in the compare range. Automated tests may be green, but your job is to design manual QA/QC that proves the shipped behavior works in real user conditions.
 
+Every packet must have two layers:
+1. Always-run baseline manual QA from `docs/baseline-human-qa-checklist.md`: Baseline P0 and Baseline P1.
+2. Release-delta manual QA from `docs/release-delta-qa-policy.md`: Delta P0/P1/P2 scenarios generated from this release's actual changes.
+
 Important:
 Do not produce a copy-pasted baseline smoke checklist. P0 “does it install/start/respond?” is required, but insufficient. The output must include commit-depth tests and human scenario cards for the release-specific changes.
 
@@ -48,7 +52,29 @@ Produce:
 - what a human should be able to understand/do after the release
 - where UX confusion, routing mistakes, or misleading errors are most likely
 
-## Commit coverage matrix
+## Baseline P0 manual QA
+Include the always-run release-blocking checklist from `docs/baseline-human-qa-checklist.md`:
+- install/upgrade
+- version/commit proof
+- first useful response
+- one configured messaging channel end-to-end
+- plugin/tool visibility
+- safe failure/error clarity
+- no obvious secret exposure
+- no silent false success
+
+## Baseline P1 manual QA
+Include the always-run core confidence checklist from `docs/baseline-human-qa-checklist.md`:
+- secondary messaging channel where configured
+- restart/gateway persistence
+- basic session continuity
+- install and use one safe plugin
+- provider/model route visibility
+- config survives restart/update
+- useful logs/status
+- report/evidence flow
+
+## Delta coverage matrix
 For every commit or grouped set of related commits:
 - commit SHA/title
 - changed area
@@ -56,7 +82,7 @@ For every commit or grouped set of related commits:
 - manual QA test case(s)
 - expected result
 - evidence required
-- priority: P0/P1/P2
+- priority: Baseline P0/P1 or Delta P0/P1/P2
 - disposition: TESTED, GROUPED, or NO_MANUAL_TEST_NEEDED
 
 Rules:
@@ -64,15 +90,8 @@ Rules:
 - NO_MANUAL_TEST_NEEDED requires a reason, such as docs-only or comments-only.
 - A generic P0 smoke row does not count as coverage for a behavior-changing commit.
 
-## P0 human QA checklist
-Include only tests that gate release confidence. At minimum cover:
-- install/upgrade to the assigned tag
-- OpenClaw version/commit proof
-- first normal response
-- configured visible channel delivery
-- plugin/tool visibility sanity check
-- harmless failure/error clarity
-- release-specific scenarios derived from the commits
+## Delta P0 human QA checklist
+Include release-specific tests that gate release confidence. Delta P0 covers critical changed behavior in install/update, routing/provider/auth, messaging, plugin/tool injection, persistence, security/secrets, or core error recovery.
 
 Each checklist row must include:
 - exact steps
@@ -92,8 +111,8 @@ For each important behavior-changing commit/group, create a tester-facing scenar
 
 These scenarios must require human observation and judgment. They should not be reducible to an agent-only automation script.
 
-## P1/P2 regression checklist
-Include lower-risk but useful manual checks.
+## Delta P1/P2 regression checklist
+Include release-specific lower-priority manual checks from `docs/release-delta-qa-policy.md`. P1 covers important behavior/regressions; P2 covers lower-risk edge cases, polish, docs/instructions, or unusual configs.
 
 ## Checklist quality gate
 Before dispatch, self-review the checklist against `docs/release-checklist-quality-rubric.md`:
