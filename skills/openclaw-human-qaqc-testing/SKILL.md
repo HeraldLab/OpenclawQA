@@ -153,7 +153,7 @@ Before dispatching a tester packet, verify:
 - [ ] Each scenario has expected behavior and failure signs.
 - [ ] Each scenario asks for human judgment/UX notes.
 - [ ] Evidence requires screen recording/video where possible.
-- [ ] It cannot be fully satisfied by an agent running commands invisibly.
+- [ ] It cannot be fully satisfied by an agent running commands out of view.
 
 ## Evidence Review Tie-In
 

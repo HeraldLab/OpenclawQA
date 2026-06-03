@@ -1,6 +1,6 @@
 ---
 name: openclaw-p0-release-qa
-description: Use when a tester agent needs to run OpenClaw alpha/beta P0 release QA, collect evidence, and produce a GitHub-ready QA report without leaking secrets.
+description: Use when guiding a human tester through OpenClaw alpha/beta P0 manual QA, collecting evidence, and producing a GitHub-ready QA report without leaking secrets.
 version: 1.0.0
 author: Herald Labs / OpenClaw QA
 license: MIT
