@@ -1,7 +1,7 @@
 {
   "tag": "v2026.6.1-beta.3",
   "repo": "openclaw/openclaw",
-  "status": "targeted_dispatch_two_threads_evidence_collection",
+  "status": "instructions_ready",
   "owner_agent": "book",
   "created_at": "2026-06-03T09:30:31.367871+00:00",
   "freshness": {
@@ -43,6 +43,6 @@
     "receipts/issue-dedupe.json",
     "receipts/issue-file-results.json"
   ],
-  "tester_instructions_generated_at": "2026-06-03T14:25:44Z",
+  "tester_instructions_generated_at": "2026-06-03T21:48:01Z",
   "closeout_generated_at": "2026-06-03T09:30:35Z"
 }

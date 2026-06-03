@@ -1,6 +1,39 @@
 {
   "tag": "v2026.6.1-beta.3",
-  "collected_at": "2026-06-03T09:30:35Z",
+  "collected_at": "2026-06-03T21:46:05Z",
   "repo": "HeraldLab/OpenclawQA",
-  "reports": []
+  "reports": [
+    {
+      "number": 3,
+      "title": "v2026.6.1-beta.3 P0 Smoke Miriam Peter — Windows 11 — PASS",
+      "url": "https://github.com/HeraldLab/OpenclawQA/issues/3",
+      "state": "open",
+      "labels": [
+        "status:needs-triage",
+        "area:install"
+      ],
+      "status": "status:needs-triage",
+      "author": "Odeyiany2",
+      "created_at": "2026-06-03T18:46:56Z",
+      "updated_at": "2026-06-03T18:46:56Z",
+      "has_evidence": true,
+      "body_chars": 1646
+    },
+    {
+      "number": 2,
+      "title": "[Install smoke]: Ayomide beta3 report — Windows 11 install/TUI/Telegram PASS, Discord BLOCKED",
+      "url": "https://github.com/HeraldLab/OpenclawQA/issues/2",
+      "state": "open",
+      "labels": [
+        "status:needs-triage",
+        "area:install"
+      ],
+      "status": "status:needs-triage",
+      "author": "mideolatunde",
+      "created_at": "2026-06-03T18:12:46Z",
+      "updated_at": "2026-06-03T18:12:46Z",
+      "has_evidence": true,
+      "body_chars": 897
+    }
+  ]
 }
