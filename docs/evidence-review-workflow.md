@@ -1,8 +1,10 @@
 # Evidence Review Workflow
 
-Every submitted P0 report needs a second-pass evidence review before we call it complete.
+Every submitted report for **Baseline P0** or **Delta P0** needs a second-pass evidence review before we call it accepted.
 
-The tester's GitHub issue is the canonical receipt, but the issue is not accepted until a reviewer has watched/analyzed the attached video evidence and checked it against the P0 checklist.
+The tester's GitHub issue is the canonical receipt, but the issue is not accepted until a reviewer has watched/analyzed the attached evidence and checked it against the assigned baseline/delta scenario.
+
+Tool-assisted video review is allowed. **Tool-only acceptance is not.** A human reviewer owns the acceptance verdict for release-blocking scenarios.
 
 ## Policy
 
@@ -129,6 +131,6 @@ Next action:
 
 ## Acceptance rule
 
-Do not mark the tester/report done until the QA issue contains an evidence review comment with `EVIDENCE_CONFIRMED` or `EVIDENCE_CONFIRMED_WITH_CAVEAT`.
+Do not mark the tester/report done until the QA issue contains an evidence review comment with `EVIDENCE_CONFIRMED` or `EVIDENCE_CONFIRMED_WITH_CAVEAT` for every assigned Baseline P0 and Delta P0 scenario.
 
-If the tester only submitted screenshots, accept them only when they cover every required P0 row. If a row depends on a sequence, ask for video.
+If the tester only submitted screenshots, accept them only when they cover every required row and the scenario is non-sequential/static. If a row depends on a workflow sequence, ask for video or record an explicit waiver.

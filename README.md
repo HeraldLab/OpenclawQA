@@ -2,15 +2,19 @@
 
 Public release QA runs and tester reports for OpenClaw alpha/beta validation.
 
-This repo is the public system of record for Herald Labs OpenClaw testing:
+This repo is the public system of record for Herald Labs **manual human QA** of OpenClaw.
+
+Core rule: **human QA is the release gate; automation is support/preflight.**
 
 1. A new OpenClaw alpha/beta tag appears.
 2. A run folder is created under `runs/<tag>/`.
-3. Agents generate a freshness report, QA checklist, and tester instructions.
-4. Testers submit reports through GitHub Issues.
-5. Maintainers review submitted evidence end-to-end, including full screen recordings.
-6. Validated bugs are deduped and filed upstream into `openclaw/openclaw`.
-7. Each run closes with a public closeout report.
+3. Automation gathers release context: release notes, commits, PRs, issue signals.
+4. QA coordinator creates a manual human QA packet with named tester/reviewer assignments.
+5. Human testers manually run baseline and release-delta scenarios.
+6. Testers submit GitHub reports with evidence and human judgment notes.
+7. Human reviewers review submitted evidence end-to-end, including full screen recordings for workflow scenarios.
+8. Validated bugs are deduped and filed upstream into `openclaw/openclaw`.
+9. Each run closes with a human-centered closeout report: confidence, confusion/trust findings, missing coverage, waivers, and blockers.
 
 ## Current Runs
 
@@ -33,6 +37,7 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 
 - Use `scripts/create-run.py <tag>` to create or refresh a run folder.
 - Use `scripts/fetch-openclaw-release-context.py <tag>` for freshness context.
+- Use `docs/manual-human-qa-operating-model.md` as the release operating model: named humans, manual execution, evidence review, waiver policy, human-centered closeout.
 - Use `docs/baseline-human-qa-checklist.md` for always-run Baseline P0/P1 manual QA.
 - Use `docs/release-delta-qa-policy.md` to generate release-specific Delta P0/P1/P2 manual QA from the actual release changes.
 - Use `templates/release-qa-generation-prompt.md` to generate a commit-aware human QA checklist from the release notes, compare diff, commits, PRs, and issue signals.

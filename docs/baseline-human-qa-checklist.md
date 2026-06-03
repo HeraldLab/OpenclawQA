@@ -178,7 +178,15 @@ Evidence is required for every claimed pass.
 
 # P1 Baseline — Always Run / Core Confidence
 
-P1 baseline checks should run every release when time/tester coverage permits. A P1 failure does not automatically block release, but it must be documented with owner and next action.
+P1 baseline checks are core confidence checks. The minimum Core P1 set must run every release, or be explicitly marked `NOT_RUN` with reason, owner, and next action.
+
+**Mandatory Core P1 every release:**
+- restart/gateway persistence
+- install and use one safe plugin
+- provider/model route visibility
+- config/session continuity after restart/update
+
+Additional P1 rows should run when the relevant surface is configured.
 
 ## P1-1. Secondary messaging channel
 
