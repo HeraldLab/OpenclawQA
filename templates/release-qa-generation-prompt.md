@@ -20,6 +20,8 @@ Do not produce a copy-pasted baseline smoke checklist. P0 “does it install/sta
 
 This QA is for human QA/QC testers. Agents may prepare the packet, but the tester-facing work must validate real human use: comprehension, channel behavior, visible output, recovery from safe failures, UX confusion, trustworthiness, and whether the feature works outside automated tests. Do not create a packet that can be satisfied entirely by an agent silently running commands.
 
+Use `docs/human-scenario-library.md` to select detailed scenario cards for relevant surfaces, especially messaging channels, plugin install/use, provider/model routing, restart/state, and error recovery.
+
 Required analysis:
 1. Fetch/read the release notes, tag metadata, compare diff, changed files, commits, merged PRs, and nearby issue signals.
 2. For each commit or coherent commit group, identify:

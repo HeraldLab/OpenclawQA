@@ -52,7 +52,13 @@ Required fields:
 
 ## Scenario Categories
 
-Use whichever categories match the release commits.
+Use whichever categories match the release commits. Pull concrete cards from `docs/human-scenario-library.md`, especially:
+
+- Messaging channels: Discord thread routing, parent/thread isolation, permission failure, Telegram delivery, media attachments.
+- Plugin lifecycle: discover/install, auth/config, use in a real task, restart persistence, disable/uninstall.
+- Provider/model route: expected route visibility, budget/auth failure clarity.
+- Sessions/state: restart continuity, upgrade preserving config.
+- Error/UX: human-readable recovery and no silent success.
 
 ### First-run/onboarding
 

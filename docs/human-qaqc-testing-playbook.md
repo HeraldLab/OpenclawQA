@@ -27,7 +27,7 @@ Agents may assist a tester with setup, but they must not replace the human inter
 
 ## What humans should test
 
-Each release packet should contain **human scenario cards**, not only technical checklist rows.
+Each release packet should contain **human scenario cards**, not only technical checklist rows. Use `docs/human-scenario-library.md` as the scenario source for common OpenClaw surfaces such as messaging channels, plugin install/use, provider routes, restart/state, and error recovery.
 
 A scenario card must include:
 
