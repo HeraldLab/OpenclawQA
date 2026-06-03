@@ -15,6 +15,9 @@ Input release:
 Task:
 Review the latest OpenClaw release and every commit included in the compare range. Automated tests may be green, but your job is to design manual QA/QC that proves the shipped behavior works in real user conditions.
 
+Important:
+Do not produce a copy-pasted baseline smoke checklist. P0 “does it install/start/respond?” is required, but insufficient. The output must include commit-depth tests for the release-specific changes.
+
 Required analysis:
 1. Fetch/read the release notes, tag metadata, compare diff, changed files, commits, merged PRs, and nearby issue signals.
 2. For each commit or coherent commit group, identify:
@@ -45,6 +48,12 @@ For every commit or grouped set of related commits:
 - expected result
 - evidence required
 - priority: P0/P1/P2
+- disposition: TESTED, GROUPED, or NO_MANUAL_TEST_NEEDED
+
+Rules:
+- Every commit must appear in this matrix or be explicitly grouped with related commits.
+- NO_MANUAL_TEST_NEEDED requires a reason, such as docs-only or comments-only.
+- A generic P0 smoke row does not count as coverage for a behavior-changing commit.
 
 ## P0 human QA checklist
 Include only tests that gate release confidence. At minimum cover:
@@ -64,6 +73,16 @@ Each checklist row must include:
 
 ## P1/P2 regression checklist
 Include lower-risk but useful manual checks.
+
+## Checklist quality gate
+Before dispatch, self-review the checklist against `docs/release-checklist-quality-rubric.md`:
+- every behavior-changing commit covered or explicitly exempted
+- not materially identical to the previous release checklist
+- release-specific scenarios exist beyond install/start/hello
+- each test has exact steps, expected result, evidence required, and pass/fail/block criteria
+- the checklist would catch a real-world failure even if automated CI is green
+
+If the checklist fails this gate, revise it before sending to testers.
 
 ## Tester instructions
 Write concise tester-facing instructions:

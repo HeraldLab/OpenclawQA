@@ -34,6 +34,7 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 - Use `scripts/create-run.py <tag>` to create or refresh a run folder.
 - Use `scripts/fetch-openclaw-release-context.py <tag>` for freshness context.
 - Use `templates/release-qa-generation-prompt.md` to generate a commit-aware human QA checklist from the release notes, compare diff, commits, PRs, and issue signals.
+- Reject generic/copy-pasted packets with `docs/release-checklist-quality-rubric.md`; P0 smoke is required but not sufficient.
 - Use `scripts/collect-reports.py <tag>` to summarize tester reports.
 - Use `scripts/review-evidence-video.py --video <local-video> --tag <tag> --tester <handle> --issue <issue-url>` or `docs/evidence-review-workflow.md` to review evidence end-to-end before accepting a report.
 - Use `scripts/dedupe-upstream-issues.py <tag>` before filing upstream.
