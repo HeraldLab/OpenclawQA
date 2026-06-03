@@ -14,15 +14,15 @@ metadata:
 
 ## Overview
 
-This skill gives a tester agent one job: run the OpenClaw P0 release smoke test for a specific alpha/beta tag, collect receipts, and produce a clean QA issue/report.
+This skill gives a tester or tester-assisting agent one job: guide a human through the OpenClaw P0 release smoke test for a specific alpha/beta tag, collect receipts, and produce a clean QA issue/report.
 
-The goal is not "I tried it." The goal is a reproducible pass/block/fail record with environment, commands, evidence links, and no exposed secrets.
+The goal is not "an agent ran commands." The goal is a reproducible human pass/block/fail record with environment, human-visible behavior, evidence links, and no exposed secrets.
 
 ## When to Use
 
 Use this when:
 - You are assigned an OpenClaw release tag such as `v2026.6.1-beta.3`.
-- You need to test install/upgrade, first response, channel delivery, plugin/tool visibility, and harmless failure handling.
+- A human tester needs to test install/upgrade, first response, channel delivery, plugin/tool visibility, and harmless failure handling.
 - You need to file a QA receipt in `HeraldLab/OpenclawQA` or prepare a report for a Discord tester thread.
 
 Do not use this to:
@@ -265,6 +265,7 @@ Before submitting:
 - [ ] OS/device included
 - [ ] Install/update method included
 - [ ] Provider/model route included
+- [ ] Human tester manually ran or observed the flow; agent-only invisible execution is not enough
 - [ ] Every P0 row has pass/block/fail status
 - [ ] Evidence links open for the QA team
 - [ ] Screen recording/video provided for any sequence-dependent result, or screenshots fully cover every P0 row

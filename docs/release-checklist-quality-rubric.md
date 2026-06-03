@@ -4,10 +4,11 @@ This rubric prevents OpenClaw QA packets from becoming copy-pasted “does it tu
 
 ## Rule
 
-Every release QA packet must contain two layers:
+Every release QA packet must contain three layers:
 
 1. **P0 baseline smoke** — proves the build installs, starts, responds, routes messages, exposes tools/plugins, and handles one harmless failure.
 2. **Commit-depth QA** — proves the actual behavior changed by the release works in real user conditions.
+3. **Human scenario QA** — asks a real tester to perform realistic workflows and judge whether OpenClaw is understandable, trustworthy, and usable outside automation.
 
 A packet with only P0 baseline smoke is incomplete unless the release has no behavior-changing commits and the checklist explicitly says so with evidence.
 
@@ -67,7 +68,22 @@ Bad test shape:
 - “Run app”
 - “Check no errors” without a specific user path
 
-### 5. Regression and edge cases
+### 5. Human scenario cards
+
+Each important release behavior needs a human scenario card.
+
+Required fields:
+- user goal
+- context/preconditions
+- manual steps
+- expected human-visible behavior
+- failure signs/confusion to watch for
+- evidence required
+- human judgment question: “Would you trust this as a user? If not, why?”
+
+This is the layer that makes QA non-automatable. It asks the tester to notice UX confusion, wrong mental model, delayed/missing output, misleading recovery instructions, and whether the feature actually helps a real user.
+
+### 6. Regression and edge cases
 
 Include tests for:
 - upgrade/migration state
@@ -84,7 +100,9 @@ Include tests for:
 Before dispatching testers, the QA coordinator must answer:
 
 - Does every behavior-changing commit have a manual test or a justified no-test disposition?
+- Are release-specific changes expressed as human scenario cards, not just command rows?
 - Are tests specific enough for a human tester to execute without asking what “works” means?
+- Does each scenario ask for human observations about confusion, trust, recovery, and visible behavior?
 - Does each test say what evidence proves pass/fail?
 - Are release-specific changes tested beyond generic P0 smoke?
 - Would this checklist catch a real-world failure even if automated CI is green?
@@ -97,7 +115,9 @@ Flag the packet if:
 - it is materially identical to the previous release checklist
 - it only tests install/start/hello
 - it does not mention commit SHAs or changed subsystems
-- it lacks release-specific scenarios
+- it has no release-specific scenarios
+- it has no human scenario cards or human judgment prompts
+- it can be fully satisfied by an invisible agent automation run
 - it has no expected results beyond “works”
 - it has no edge/failure checks
 

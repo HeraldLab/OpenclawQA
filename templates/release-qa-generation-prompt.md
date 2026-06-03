@@ -16,7 +16,9 @@ Task:
 Review the latest OpenClaw release and every commit included in the compare range. Automated tests may be green, but your job is to design manual QA/QC that proves the shipped behavior works in real user conditions.
 
 Important:
-Do not produce a copy-pasted baseline smoke checklist. P0 “does it install/start/respond?” is required, but insufficient. The output must include commit-depth tests for the release-specific changes.
+Do not produce a copy-pasted baseline smoke checklist. P0 “does it install/start/respond?” is required, but insufficient. The output must include commit-depth tests and human scenario cards for the release-specific changes.
+
+This QA is for human QA/QC testers. Agents may prepare the packet, but the tester-facing work must validate real human use: comprehension, channel behavior, visible output, recovery from safe failures, UX confusion, trustworthiness, and whether the feature works outside automated tests. Do not create a packet that can be satisfied entirely by an agent silently running commands.
 
 Required analysis:
 1. Fetch/read the release notes, tag metadata, compare diff, changed files, commits, merged PRs, and nearby issue signals.
@@ -38,6 +40,11 @@ Produce:
 - release URL
 - major changed surfaces
 - highest-risk areas
+
+## Human QA intent
+- what real user workflows this release is supposed to improve or preserve
+- what a human should be able to understand/do after the release
+- where UX confusion, routing mistakes, or misleading errors are most likely
 
 ## Commit coverage matrix
 For every commit or grouped set of related commits:
@@ -71,6 +78,18 @@ Each checklist row must include:
 - what to record/screenshot
 - pass/fail/block criteria
 
+## Release-specific human scenario cards
+For each important behavior-changing commit/group, create a tester-facing scenario card:
+- user goal
+- context/preconditions
+- manual steps the human performs
+- expected visible behavior
+- failure signs to watch for
+- evidence required
+- human judgment question: “Would you trust this as a user? If not, why?”
+
+These scenarios must require human observation and judgment. They should not be reducible to an agent-only automation script.
+
 ## P1/P2 regression checklist
 Include lower-risk but useful manual checks.
 
@@ -78,7 +97,8 @@ Include lower-risk but useful manual checks.
 Before dispatch, self-review the checklist against `docs/release-checklist-quality-rubric.md`:
 - every behavior-changing commit covered or explicitly exempted
 - not materially identical to the previous release checklist
-- release-specific scenarios exist beyond install/start/hello
+- release-specific human scenarios exist beyond install/start/hello
+- each scenario requires human observation/judgment, not only command output
 - each test has exact steps, expected result, evidence required, and pass/fail/block criteria
 - the checklist would catch a real-world failure even if automated CI is green
 
@@ -87,6 +107,9 @@ If the checklist fails this gate, revise it before sending to testers.
 ## Tester instructions
 Write concise tester-facing instructions:
 - what to install/test
+- human scenario cards to run manually
+- expected human-visible behavior
+- confusion/UX notes to capture
 - exact report format
 - evidence links required
 - screen recording/video expected end-to-end where possible
