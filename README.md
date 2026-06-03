@@ -8,8 +8,9 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 2. A run folder is created under `runs/<tag>/`.
 3. Agents generate a freshness report, QA checklist, and tester instructions.
 4. Testers submit reports through GitHub Issues.
-5. Validated bugs are deduped and filed upstream into `openclaw/openclaw`.
-6. Each run closes with a public closeout report.
+5. Maintainers review submitted evidence end-to-end, including full screen recordings.
+6. Validated bugs are deduped and filed upstream into `openclaw/openclaw`.
+7. Each run closes with a public closeout report.
 
 ## Current Runs
 
@@ -23,15 +24,17 @@ This repo is the public system of record for Herald Labs OpenClaw testing:
 
 - Open the run folder for the target tag.
 - Read `tester-instructions.md`.
-- Screen-record the manual QA session.
+- Screen-record the manual QA session end-to-end where possible.
 - Submit a tester report issue using the appropriate issue template.
 - Include logs, screenshots, and recording links where possible.
+- Reply in the assigned Discord thread with the GitHub issue link.
 
 ## Maintainer Flow
 
 - Use `scripts/create-run.py <tag>` to create or refresh a run folder.
 - Use `scripts/fetch-openclaw-release-context.py <tag>` for freshness context.
 - Use `scripts/collect-reports.py <tag>` to summarize tester reports.
+- Use `scripts/review-evidence-video.py --video <local-video> --tag <tag> --tester <handle> --issue <issue-url>` or `docs/evidence-review-workflow.md` to review evidence end-to-end before accepting a report.
 - Use `scripts/dedupe-upstream-issues.py <tag>` before filing upstream.
 - Use `scripts/file-upstream-issues.py <tag> --dry-run` before first live filing.
 

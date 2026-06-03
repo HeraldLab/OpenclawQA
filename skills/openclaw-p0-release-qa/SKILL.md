@@ -154,12 +154,17 @@ Use exactly one verdict:
 ## Evidence Rules
 
 Evidence can be:
-- screenshots
-- screen recording
+- screen recording/video, preferred for full P0 runs
+- screenshots, acceptable only when they cover every required row
 - terminal logs
 - Discord/Telegram message links
 - GitHub issue links
 - cloud folder links accessible to the QA team
+
+Video expectation:
+- Record the whole P0 run when possible, not just the final screen.
+- The QA reviewer will inspect the video end-to-end before accepting the report.
+- If the video shows warnings/errors not mentioned in the report, the report may be returned for clarification.
 
 Required hygiene:
 - redact API keys/tokens
@@ -205,6 +210,7 @@ Body template:
 - [ ] Release-specific scenario, if assigned: <name or Not assigned>
 
 ## Evidence links
+- Screen recording / video:
 - Install/upgrade:
 - First response:
 - Channel delivery:
@@ -261,5 +267,19 @@ Before submitting:
 - [ ] Provider/model route included
 - [ ] Every P0 row has pass/block/fail status
 - [ ] Evidence links open for the QA team
+- [ ] Screen recording/video provided for any sequence-dependent result, or screenshots fully cover every P0 row
 - [ ] Secrets check completed
 - [ ] GitHub QA issue or Discord report link shared back in the assigned thread
+
+## Reviewer Follow-Up
+
+After submission, the QA reviewer will run the evidence review workflow:
+
+- open all evidence links
+- watch/analyze the full video duration
+- timestamp proof for every P0 row
+- record visible warnings/errors
+- confirm no secrets are exposed
+- comment on the QA issue with `EVIDENCE_CONFIRMED`, `EVIDENCE_CONFIRMED_WITH_CAVEAT`, or a request for missing/redacted evidence
+
+The report is not operationally accepted until that evidence review is complete.

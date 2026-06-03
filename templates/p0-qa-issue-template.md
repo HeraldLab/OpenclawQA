@@ -24,6 +24,7 @@
 - [ ] Release-specific scenario, if assigned: <name or Not assigned>
 
 ## Evidence links
+- Screen recording / video:
 - Install/upgrade:
 - First response:
 - Channel delivery:
