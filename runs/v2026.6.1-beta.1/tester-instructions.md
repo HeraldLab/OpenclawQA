@@ -4,7 +4,7 @@ Generated: `2026-06-01T16:29:58Z`
 Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.1-beta.1  
 Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.1  
 Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose  
-Deadline: **48 hours after dispatch**
+Deadline: **6 hours after packet receipt**
 
 
 ## Access and Reporting Route

@@ -1,7 +1,7 @@
 {
   "tag": "v2026.6.1-beta.3",
   "repo": "openclaw/openclaw",
-  "status": "draft_ready_pending_approval",
+  "status": "targeted_dispatch_two_threads_evidence_collection",
   "owner_agent": "book",
   "created_at": "2026-06-03T09:30:31.367871+00:00",
   "freshness": {
@@ -20,7 +20,22 @@
     "discord_thread": null,
     "entity_internal_card": null
   },
-  "testers": [],
+  "testers": [
+    {
+      "tester": "ayomide",
+      "thread_id": "1511072287250714626",
+      "packet_message_id": "1511734867698647231",
+      "deadline_correction_message_id": "1511737818022678558",
+      "due_at": "2026-06-03T20:14:39Z"
+    },
+    {
+      "tester": "miriampeter",
+      "thread_id": "1510234021052026880",
+      "packet_message_id": "1511734867161776210",
+      "deadline_correction_message_id": "1511737848607408269",
+      "due_at": "2026-06-03T20:14:39Z"
+    }
+  ],
   "upstream_issues": [],
   "receipts": [
     "receipts/github-fetch.json",
@@ -28,6 +43,6 @@
     "receipts/issue-dedupe.json",
     "receipts/issue-file-results.json"
   ],
-  "tester_instructions_generated_at": "2026-06-03T09:30:35Z",
+  "tester_instructions_generated_at": "2026-06-03T14:25:44Z",
   "closeout_generated_at": "2026-06-03T09:30:35Z"
 }

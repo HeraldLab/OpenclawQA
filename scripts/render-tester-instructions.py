@@ -8,7 +8,7 @@ from common import PUBLIC_REPO, UPSTREAM_REPO, ensure_run, load_json, now_iso, r
 def main() -> int:
     ap = argparse.ArgumentParser(description="Render public tester instructions for an OpenClawQA run")
     ap.add_argument("tag")
-    ap.add_argument("--deadline", default="48 hours after dispatch")
+    ap.add_argument("--deadline", default="6 hours after packet receipt")
     args = ap.parse_args()
     tag = args.tag
     ensure_run(tag)

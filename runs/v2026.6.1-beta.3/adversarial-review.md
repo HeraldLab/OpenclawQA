@@ -24,7 +24,7 @@ If Henry replies `APPROVE DISPATCH`, send one Ada/SuperAda-owned packet to each 
 - Gabriel — `1511072287690981468`
 - Miriam — `1510234021052026880`
 
-Packet should state that `v2026.6.1-beta.3` supersedes/extends beta2 validation, ask for PASS/BLOCKED/ETA within 48h, and preserve current blocker-specific asks. No raw keys/secrets.
+Packet should state that `v2026.6.1-beta.3` supersedes/extends beta2 validation, ask for PASS/BLOCKED/ETA within 6 hours of packet receipt, and preserve current blocker-specific asks. No raw keys/secrets.
 
 ## Block conditions
 

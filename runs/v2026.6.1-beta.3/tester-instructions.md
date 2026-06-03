@@ -1,10 +1,10 @@
 # Tester Instructions — OpenClaw `v2026.6.1-beta.3`
 
-Generated: `2026-06-03T09:30:35Z`  
+Generated: `2026-06-03T14:25:44Z`  
 Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.1-beta.3  
 Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.3  
 Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose  
-Deadline: **48 hours after dispatch**
+Deadline: **6 hours after packet receipt**
 
 ## Target
 
