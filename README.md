@@ -27,6 +27,7 @@ Core rule: **human QA is the release gate; automation is support/preflight.**
 
 ## Tester Flow
 
+- Start with the [OpenClaw setup guide](docs/openclaw-setup-guide.md) if this is your first install, upgrade, or channel setup.
 - Open the run folder for the target tag.
 - Read `tester-instructions.md`.
 - Screen-record the manual QA session end-to-end where possible.
@@ -38,7 +39,8 @@ Core rule: **human QA is the release gate; automation is support/preflight.**
 
 - Use `scripts/create-run.py <tag>` to create or refresh a run folder.
 - Use `scripts/fetch-openclaw-release-context.py <tag>` for freshness context.
-- Share `docs/human-qa-layer-v1-research-and-feedback.md` with testers so they understand the problem, V1, official issue research, and where their feedback can improve the process.
+- Use `docs/openclaw-setup-guide.md` for first-install, upgrade, Discord/Telegram setup, common blocker, and FAQ guidance derived from the Herald Labs tester threads.
+- Use `docs/human-qa-layer-v1-research-and-feedback.md` with testers so they understand the problem, V1, official issue research, and where their feedback can improve the process.
 - Use `docs/manual-human-qa-operating-model.md` as the release operating model: named humans, manual execution, evidence review, waiver policy, human-centered closeout.
 - Use `docs/baseline-human-qa-checklist.md` for always-run Baseline P0/P1 manual QA.
 - Use `docs/release-delta-qa-policy.md` to generate release-specific Delta P0/P1/P2 manual QA from the actual release changes.

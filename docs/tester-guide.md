@@ -2,13 +2,14 @@
 
 ## What to do
 
-1. Open the run folder for your target tag.
-2. Read `tester-instructions.md`.
-3. Install or upgrade to the target OpenClaw tag.
-4. Run the requested manual QA scenarios.
-5. Screen-record the session.
-6. Save logs and screenshots.
-7. File one GitHub issue per bug using the tester report template.
+1. Read the [OpenClaw setup guide](openclaw-setup-guide.md) if this is your first install, upgrade, or Discord/Telegram setup.
+2. Open the run folder for your target tag.
+3. Read `tester-instructions.md`.
+4. Install or upgrade to the target OpenClaw tag.
+5. Run the requested manual QA scenarios.
+6. Screen-record the session where possible.
+7. Save logs and screenshots.
+8. File one GitHub issue per bug using the tester report template.
 
 ## Evidence expectations
 
