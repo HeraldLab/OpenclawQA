@@ -1,78 +1,124 @@
 # Tester Instructions — OpenClaw `v2026.6.2-beta.1`
 
-Generated: `2026-06-04T00:00:47Z`
+Generated: `2026-06-04T01:10:00Z`
 Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.2-beta.1
 Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.2-beta.1
 Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose
-Deadline: **6 hours after packet receipt**
+Deadline: **6 hours after packet receipt**, unless Henry/admin sets a different SLA.
 
 ## Target
 
-Test OpenClaw beta release `v2026.6.2-beta.1`. This is a manual QA pass for release confidence, not a general support thread.
+Test OpenClaw beta release `v2026.6.2-beta.1` with human-observed QA. This is not just command output. We need to know whether a real user would trust the install, messaging, plugin, failure, and recovery surfaces.
 
-- Latest beta tag: `v2026.6.2-beta.1`
+## Required report header
 
-## Required setup evidence
+Include these in every report:
 
-Please include these in every report:
-
-- OS/platform and version.
+- Tester handle.
+- OS/platform/version.
 - Install/upgrade method and exact command used.
 - OpenClaw version/tag observed after install.
 - Provider/model route used if a model call is part of the test.
-- Screen recording or screenshots.
-- Logs for failures.
+- Assigned channel/surface: TUI, Discord, Telegram, WebChat, Workboard, etc.
+- Evidence links/screenshots/recording.
+- Secrets check: confirm no raw keys/tokens/private customer data are exposed.
 
-If a fact is unavailable, write `NOT_ENOUGH_INFO`.
+If a fact is unavailable, write `NOT_ENOUGH_INFO` and explain why.
 
-## How your assigned card is generated
-
-You should receive a short human QA card, not this whole operating model. The coordinator generates the card from:
-
-1. **Universal baseline:** install/update, version proof, first response, one visible channel, plugin/tool sanity, safe failure, secrets check.
-2. **Your real setup:** OS, channel, provider/model route, available plugin, restart path.
-3. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
-
-Default card shape is 6–8 checks:
+## Baseline checks every dispatched tester must cover
 
 1. Install/upgrade to `v2026.6.2-beta.1`.
 2. Prove version/tag/commit.
-3. Get one normal response.
-4. Verify your assigned human-visible channel.
+3. Get one normal first response.
+4. Verify one assigned human-visible messaging/channel path.
 5. Check plugin/tool visibility or install/use one safe plugin.
 6. Trigger one harmless failure and judge whether recovery is clear.
-7. Run one Core P1 check: restart/persistence, provider route, or config/session continuity.
-8. Run one release-specific delta check if assigned.
+7. Run one Core P1 check: restart/gateway persistence, provider route, or config/session continuity.
+8. Include expected vs actual behavior and a human trust/confusion note.
 
-If you already proved a row in a previous issue, do not rerun it unless asked. Submit only the addendum.
+## Release-specific focus for beta62
 
-## Baseline P0 smoke scenarios
+The release notes call out these high-risk behavior changes:
 
-1. **Install or upgrade** to `v2026.6.2-beta.1` from your normal path.
-2. **Version proof:** show OpenClaw version/tag/commit after install.
-3. **First response path:** start OpenClaw and get one normal response.
-4. **Messaging delivery path:** if you have Discord/Telegram configured, verify a response reaches the human-visible channel.
-5. **Plugin/tool visibility:** confirm configured tools/plugins are present and not silently omitted.
-6. **Failure clarity:** intentionally trigger one harmless config/provider failure if safe, and verify the error is understandable.
-7. **Secrets/false-success check:** confirm evidence has no secrets and success claims match visible results.
+- Plugin and skill installs now use an operator install policy instead of the old dangerous-code scanner path.
+- Discord/Telegram/Feishu/WhatsApp/outbound delivery changed around duplicate transcript mirrors, Telegram admin writeback, streamed-final previews, approval allowlists, poll modifiers, Discord voice errors, and internal progress traces.
+- Chat/UI/Workboard/WebChat flows changed around streaming text, completed-send reconciliation, ACK timing, keyboard movement, and current chat toggles.
+- Security/policy/config recovery now rejects corrupt shell snapshots, unsupported policy keys, unsafe exec precheck envs, malformed numeric limits, and suspicious gateway startup configs.
+- Gateway/agent/provider/model paths changed around session locks, abandoned Codex app-server startups, custom-provider fanout, bundled provider aliases, prompt-cache boundaries, Gemini/Kimi handling.
+- Windows installer and package publication paths changed; verify the beta channel is not stale.
 
-## Core P1 add-ons
+## Short tester cards
 
-Run assigned add-ons only:
+### Card A — Windows install/package + provider route
 
-- Restart/gateway persistence.
-- Install and use one safe plugin.
-- Provider/model route visibility.
-- Config/session continuity after restart/update.
-- Secondary messaging channel if configured.
+Best for: Ayomide or Miriam.
 
-## Release-delta add-ons
+1. Run:
+   ```powershell
+   npm view openclaw@beta version
+   npm install -g openclaw@beta
+   openclaw --version
+   openclaw gateway status
+   ```
+2. Start OpenClaw and send `hello`.
+3. Capture provider/model route if visible.
+4. Restart gateway, then send one more short prompt.
+5. Trigger one harmless bad provider/model/config error if safe.
 
-The coordinator may assign one release-specific scenario derived from changed code or current upstream issue signals. Treat it as manual human QA: record the real flow, expected vs actual, confusion/trust notes, and evidence.
+Expected: beta channel points to `2026.6.2-beta.1`; gateway status is understandable; one useful response appears; bad config fails clearly without secrets.
+
+Evidence: command screenshots, first response screenshot, restart/status screenshot, redacted failure screenshot.
+
+### Card B — Telegram/Discord delivery + duplicate/final-output check
+
+Best for: Anny or any tester with a configured public channel.
+
+1. Upgrade/install to beta62 and capture version.
+2. Use the assigned channel/thread/bot and send `hello` or one normal request.
+3. Watch whether progress preview and final output duplicate or leak internal traces.
+4. Confirm reply lands in the correct human-visible target: not wrong parent channel, wrong thread, or silent drop.
+5. Trigger one harmless failure and record whether the channel error is readable.
+
+Expected: exactly one final answer in the correct target; no duplicate finals; no raw internal trace; failure message is useful.
+
+Evidence: channel screenshots with timestamps/message IDs, plus version proof.
+
+### Card C — Plugin operator install policy
+
+Best for: tester comfortable with plugins/tools.
+
+1. After upgrade, list configured tools/plugins or open the plugin install surface.
+2. Install/update one safe plugin/tool or use an already-installed safe plugin.
+3. Observe the operator install policy prompt/decision surface.
+4. If safe, attempt one unsupported/unreadable plugin metadata path and observe recovery.
+
+Expected: allow/deny decision is understandable; doctor/CLI/ClawHub surfaces agree; unreadable plugin does not break the entire tool list.
+
+Evidence: screenshots/logs of prompt, decision, result, and trust note.
+
+### Card D — Security/config harmless rejection
+
+Best for: any tester after baseline smoke passes.
+
+1. Use a safe malformed config/provider/model name or documented harmless bad setting.
+2. Run the smallest command needed to trigger the error.
+3. Redact logs before upload.
+
+Expected: OpenClaw rejects unsafe/unsupported state clearly and does not print secrets.
+
+Evidence: screenshot/log and one sentence: "Would a user know what to do next?"
+
+## Recommended first wave
+
+- Ayomide: Card A + one harmless failure.
+- Miriam: Card A with Windows packaging/backup/SSH-safety note.
+- Anny: Card B plus report quality check.
+
+Hold Samuel and Gabriel unless Henry/admin explicitly assigns beta62 despite unresolved beta2 state.
 
 ## Report format
 
-Use GitHub Issues in this repo:
+Use GitHub Issues in this repo or the existing per-person Discord thread:
 
 - Use **Install smoke result** for install-only passes/failures.
 - Use **Tester report** for general scenario reports.
@@ -82,8 +128,6 @@ One issue per bug. Do not combine unrelated failures.
 
 ## Evidence quality bar
 
-A report is triage-ready when it has target tag, OS/platform, install method, exact steps, expected behavior, actual behavior, logs or screenshots/recording, and whether it reproduces again.
+A report is triage-ready when it has target tag, OS/platform, install method, exact steps, expected behavior, actual behavior, screenshots/recording/logs, and whether the issue reproduces.
 
-## Privacy
-
-Do not upload secrets, API keys, private customer data, or unsanitized environment dumps. If raw evidence contains private data, summarize publicly and say the raw artifact is private.
+Do not upload secrets, API keys, SSH private keys, private customer data, or unsanitized environment dumps. If raw evidence contains private data, summarize publicly and say the raw artifact is private.
