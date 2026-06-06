@@ -1,89 +1,154 @@
 # Tester Instructions — OpenClaw `v2026.6.5-beta.1`
 
-Generated: `2026-06-06T04:00:11Z`
-Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.5-beta.1
-Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1
-Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose
-Deadline: **6 hours after packet receipt**
+Generated: `2026-06-06T11:00:00Z`  
+Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.5-beta.1  
+Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1  
+Report results: https://github.com/HeraldLab/OpenclawQA/issues/new/choose  
+Deadline: **6 hours after packet receipt**, unless Henry/admin sets a different SLA.
 
 ## Target
 
-Test OpenClaw beta release `v2026.6.5-beta.1`. This is a manual QA pass for release confidence, not a general support thread.
+Test OpenClaw beta release `v2026.6.5-beta.1` with human-observed QA. This is not just command output. We need to know whether a real user would trust the install, messaging, tool/plugin, provider, restart, and recovery surfaces.
 
-- Latest beta tag: `v2026.6.5-beta.1`
+## Required report header
 
-## Required setup evidence
+Include these in every report:
 
-Please include these in every report:
-
-- OS/platform and version.
+- Tester handle.
+- Assigned Discord/thread/channel.
+- OS/platform/version.
 - Install/upgrade method and exact command used.
 - OpenClaw version/tag observed after install.
 - Provider/model route used if a model call is part of the test.
-- Screen recording or screenshots.
-- Logs for failures.
+- Assigned surface: TUI, Discord thread, Telegram, WebChat, Matrix, Workboard, etc.
+- Evidence links/screenshots/recording.
+- Secrets check: confirm no raw keys/tokens/private customer data/cookies/passwords are exposed.
 
-If a fact is unavailable, write `NOT_ENOUGH_INFO`.
+If a fact is unavailable, write `NOT_ENOUGH_INFO` and explain why.
 
-## How your assigned card is generated
-
-You should receive a short human QA card, not this whole operating model. The coordinator generates the card from:
-
-1. **Universal baseline:** install/update, version proof, first response, one visible channel, plugin/tool sanity, safe failure, secrets check.
-2. **Your real setup:** OS, channel, provider/model route, available plugin, restart path.
-3. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
-
-Default card shape is 6–8 checks:
+## Baseline checks every dispatched tester must cover
 
 1. Install/upgrade to `v2026.6.5-beta.1`.
 2. Prove version/tag/commit.
-3. Get one normal response.
-4. Verify your assigned human-visible channel.
-5. Check plugin/tool visibility or install/use one safe plugin.
+3. Get one normal first response.
+4. Verify one assigned human-visible messaging/channel path.
+5. Check plugin/tool visibility or use one safe plugin/tool.
 6. Trigger one harmless failure and judge whether recovery is clear.
-7. Run one Core P1 check: restart/persistence, provider route, or config/session continuity.
-8. Run one release-specific delta check if assigned.
+7. Run one Core P1 check: restart/gateway persistence, provider route, or config/session continuity.
+8. Include expected vs actual behavior and a human trust/confusion note.
 
-If you already proved a row in a previous issue, do not rerun it unless asked. Submit only the addendum.
+## Release-specific focus for beta665
 
-## Baseline P0 smoke scenarios
+The release notes call out these high-risk behavior changes:
 
-1. **Install or upgrade** to `v2026.6.5-beta.1` from your normal path.
-2. **Version proof:** show OpenClaw version/tag/commit after install.
-3. **First response path:** start OpenClaw and get one normal response.
-4. **Messaging delivery path:** if you have Discord/Telegram configured, verify a response reaches the human-visible channel.
-5. **Plugin/tool visibility:** confirm configured tools/plugins are present and not silently omitted.
-6. **Failure clarity:** intentionally trigger one harmless config/provider failure if safe, and verify the error is understandable.
-7. **Secrets/false-success check:** confirm evidence has no secrets and success claims match visible results.
+- Native channel replies should strip reasoning/thinking scaffolding before users see them.
+- MCP/tool results with resource/audio/image-like blocks should not break provider calls or poison session history.
+- Anthropic/Codex/agent sessions should recover more cleanly after prompt-cache expiry or Gateway restart.
+- Parallel is now bundled as a `web_search` provider; missing/available provider state should be clear.
+- Google Vertex/provider catalog/cooldown and memory adapter status paths changed.
+- Matrix voice/thread behavior changed.
+- Auth profiles, official npm plugin install records, and prerelease fallback integrity should be more durable.
+- macOS node mode should avoid unexpected reconnect churn.
+- Doctor/cron/service-env/WhatsApp config reload paths changed.
+- TUI/chat/Workboard message stability improved around stale history/reloads/abort windows.
+- Security/config/tooling guards should fail clearly without leaking secrets.
 
-## Core P1 add-ons
+## Short tester cards
 
-Run assigned add-ons only:
+### Card A — Windows install/package + provider/tool visibility
 
-- Restart/gateway persistence.
-- Install and use one safe plugin.
-- Provider/model route visibility.
-- Config/session continuity after restart/update.
-- Secondary messaging channel if configured.
+Best for: Ayomide.
 
-## Release-delta add-ons
+1. Run:
+   ```powershell
+   npm view openclaw@beta version
+   npm install -g openclaw@beta
+   openclaw --version
+   openclaw gateway status
+   ```
+2. Start OpenClaw and send `hello`.
+3. Capture provider/model route if visible.
+4. Use one safe tool/plugin or list available tools/plugins.
+5. Trigger one harmless bad provider/model/config error if safe.
 
-The coordinator may assign one release-specific scenario derived from changed code or current upstream issue signals. Treat it as manual human QA: record the real flow, expected vs actual, confusion/trust notes, and evidence.
+Expected: beta channel points to `2026.6.5-beta.1`; gateway status is understandable; one useful response appears; tool/plugin state is visible; bad config fails clearly without secrets.
+
+Evidence: command screenshots, first response screenshot, tool/plugin screenshot, redacted failure screenshot.
+
+### Card B — Gateway restart + auth/plugin continuity
+
+Best for: Mariam.
+
+1. Upgrade/install to beta665 and capture version.
+2. Send one normal prompt.
+3. Restart gateway/session using the documented command/path.
+4. Send a second prompt in the same surface.
+5. Confirm auth/profile/plugin state survives or fails clearly.
+6. If provider/key/server errors appear, classify whether it is OpenClaw install failure or external provider outage.
+
+Expected: after restart, OpenClaw responds again; no hang; no stale provider route; no secret exposure in logs.
+
+Evidence: before/after screenshots, gateway/status screenshot, provider/error classification if blocked.
+
+### Card C — Fixed-thread delivery + no reasoning leak
+
+Best for: Anny or any tester with a configured channel.
+
+1. Upgrade/install to beta665 and capture version.
+2. Use the assigned per-person thread/channel and send: `OpenClaw beta665 test <timestamp>: reply with a short checklist.`
+3. Send a follow-up in the same thread.
+4. Confirm the reply lands in the correct target, appears once, and preserves context.
+5. Check the visible reply for `<thinking>`, raw provider trace, internal progress dump, duplicate finals, or parent-channel leakage.
+6. Trigger one harmless failure and record whether the channel error is readable.
+
+Expected: exactly one final answer in the correct thread/channel; no reasoning leak; no duplicate; no wrong parent/thread delivery.
+
+Evidence: channel screenshots or recording with timestamps/message IDs, plus version proof.
+
+### Card D — Tool/MCP/plugin rich-result sanity
+
+Best for: tester with safe tools/plugins configured.
+
+1. Use a safe tool/plugin that returns a link, file-like result, media-like result, or structured/rich output if available.
+2. Ask one follow-up after the tool result.
+3. If no such tool is available, list tools/plugins and mark `NOT_RUN` with reason.
+
+Expected: tool result is readable; follow-up still works; no Anthropic/provider 400, malformed image error, or broken session history.
+
+Evidence: screenshot/log of tool output and follow-up result.
+
+### Card E — Optional provider-specific checks
+
+Only run if your environment has the relevant provider/channel:
+
+- Parallel `web_search`: confirm provider/tool availability or clear missing-key state.
+- Google/Vertex: confirm catalog/status and one simple call if configured.
+- Matrix: confirm voice/thread preflight if configured.
+- WhatsApp: confirm config reload/startup does not hang if configured.
+- macOS node mode: confirm direct Gateway session does not churn if configured.
+
+If not configured, write `NOT_RUN — not configured`.
+
+## Recommended first wave
+
+- Ayomide: Card A + harmless failure.
+- Mariam: Card B + provider/blocker classification.
+- Anny: Card C + tool/plugin visibility.
+
+Hold Samuel and Gabriel unless Henry/admin explicitly assigns beta665 despite unresolved prior state.
 
 ## Report format
 
-Use GitHub Issues in this repo:
+Use GitHub Issues in this repo or the existing per-person Discord thread:
 
 - Use **Install smoke result** for install-only passes/failures.
 - Use **Tester report** for general scenario reports.
 - Use **Beta blocker** only for issues that block release validation.
 
-One issue per bug. Do not combine unrelated failures.
+One issue per bug. Do not combine unrelated failures. Do **not** file upstream `openclaw/openclaw` issues directly unless asked.
 
 ## Evidence quality bar
 
-A report is triage-ready when it has target tag, OS/platform, install method, exact steps, expected behavior, actual behavior, logs or screenshots/recording, and whether it reproduces again.
+A report is triage-ready when it has target tag, OS/platform, install method, exact steps, expected behavior, actual behavior, screenshots/recording/logs, and whether the issue reproduces.
 
-## Privacy
-
-Do not upload secrets, API keys, private customer data, or unsanitized environment dumps. If raw evidence contains private data, summarize publicly and say the raw artifact is private.
+Do not upload secrets, API keys, SSH private keys, cookies, private customer data, or unsanitized environment dumps. If raw evidence contains private data, summarize publicly and say the raw artifact is private.

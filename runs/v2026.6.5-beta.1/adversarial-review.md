@@ -1,3 +1,88 @@
-# Adversarial Review
+# Adversarial Review — OpenClaw `v2026.6.5-beta.1`
 
-_TODO: generated per run._
+Generated: `2026-06-06T11:00:00Z`  
+Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.5-beta.1
+
+## Verdict
+
+`REVIEW_READY_WITH_CAVEATS` — the initial workflow produced stub `qa-checklist.md` and `adversarial-review.md` files. This review repairs the release gate by adding baseline P0/P1 coverage, release-delta human scenario cards, fixed per-person thread routing, evidence requirements, and first-wave recommendations. Public dispatch still requires Henry/admin approval.
+
+## Hard blockers before dispatch
+
+| Blocker | Status | Required action |
+|---|---|---|
+| Public dispatch approval | Not approved | Send approval packet to thread `1511147437329485977`; wait for `APPROVE DISPATCH`, `CHANGE: ...`, or `BLOCK: ...`. |
+| Correct tester threads | Defined | Use Ayomide `1511072287250714626`, Mariam `1510234021052026880`, Anny `1511072288412405980`. Do not use Anny old thread `1511018659131297933`. |
+| Active unresolved testers | Samuel/Gabriel unresolved or blocked in prior cycle | Recommended: hold Samuel/Gabriel unless Henry/admin explicitly waives or assigns them. |
+| Evidence review | No reports yet | Do not mark beta665 ready until reports are evidence-reviewed, not merely self-declared PASS. |
+| Upstream issue filing | Disabled | File/comment upstream only after dedupe and separate approval or explicit policy. |
+
+## Rubric review
+
+| Rubric item | Result | Notes |
+|---|---|---|
+| Baseline P0 included | PASS | Install/upgrade, version proof, first response, fixed messaging/thread delivery, plugin/tool visibility, harmless failure, report flow, secrets check. |
+| Core P1 included | PASS | Restart/gateway persistence, provider/model route, config/session continuity, plugin lifecycle, useful logs/status. |
+| Release-specific delta included | PASS | Reasoning leak prevention, MCP rich-result coercion, restart/provider recovery, Parallel/Google provider state, Matrix/voice/thread, auth/plugin durability, macOS node, doctor/cron/service-env/WhatsApp, TUI message stability, security/config guards. |
+| Commit/release coverage matrix | PASS_WITH_CAVEAT | Uses coherent release-note groups and PR/release signals from upstream release context rather than enumerating every PR individually. This is acceptable for human QA if grouped behavior risks are covered. |
+| Human scenario quality | PASS | Requires human observation of visible output, thread routing, duplicate/missing finals, reasoning leaks, recovery text, and trust/confusion. Not satisfiable by invisible agent automation alone. |
+| Evidence requirements | PASS | Requires screenshots/recordings/logs, expected vs actual, secret check, and accessible evidence. |
+| Tester assignment realism | PASS_WITH_CAVEAT | First wave avoids Samuel/Gabriel because prior lanes are unresolved. Henry/admin can override. |
+| Duplicate public-send risk | PASS | Approval packet goes to approval thread only; dispatch held; per-person thread map is explicit. |
+
+## Highest-risk release deltas
+
+1. **Reasoning/thinking content boundary**
+   - Risk: internal model reasoning leaks into user-visible channel replies.
+   - Required human proof: visible channel screenshots showing final answers without `<thinking>`/trace/progress dump.
+
+2. **MCP/tool rich-result materialization**
+   - Risk: tool results with resources/audio/malformed image blocks cause provider 400s or corrupt session history.
+   - Required human proof: safe tool/plugin output plus follow-up response after tool result.
+
+3. **Restart/provider recovery**
+   - Risk: gateway restart or prompt-cache expiry creates hangs, invisible finals, stale signature errors, or wrong provider route.
+   - Required human proof: before/after restart prompt and status evidence.
+
+4. **Provider/plugin/auth durability**
+   - Risk: auth profiles, trusted plugin pins, prerelease fallback integrity, or provider catalog/cooldown state become misleading after upgrade.
+   - Required human proof: package/version/status/plugin/provider screenshots.
+
+5. **Thread/channel routing**
+   - Risk: beta comms and OpenClaw replies land in wrong parent/thread; duplicate finals or hidden errors return.
+   - Required human proof: fixed tester thread screenshots/message IDs.
+
+6. **Doctor/cron/service env/WhatsApp migration**
+   - Risk: upgrade silently breaks cron stores, masks state-dir env secrets with placeholders, or strands WhatsApp startup/reload.
+   - Required human proof: doctor/status or configured channel proof where available.
+
+## Negative tests to require
+
+- One harmless bad provider/model/config/plugin path.
+- One fixed-thread channel request with exact target/thread verification.
+- One restart after upgrade before a second request.
+- One plugin/tool visibility or rich-output sanity check.
+- One visible-output inspection for reasoning/progress/trace leakage.
+- One evidence privacy check before upload.
+
+## Dispatch recommendation
+
+Recommended approval ask:
+
+> Approve Ada/SuperAda to dispatch `v2026.6.5-beta.1` first-wave packets to Ayomide, Mariam, and Anny in their fixed per-person threads. Hold Samuel and Gabriel unless explicitly assigned.
+
+Reason: latest beta is real, packet is now release-depth/human-QA ready, but the prior unresolved lanes make a 3-person first wave cleaner than all-active dispatch.
+
+## What would make this fail review
+
+- Sending tester packets before approval.
+- Sending to cohort-wide `#openclaw` instead of fixed per-person tester threads.
+- Sending Anny's packet to old thread `1511018659131297933`.
+- Dispatching a generic install-only smoke without release-delta cards.
+- Counting a PDF/issue as PASS without evidence review.
+- Accepting reports that omit version/tag, OS, install method, channel/thread evidence, harmless failure result, or secrets check.
+- Filing upstream bugs directly from tester claims without dedupe/approval.
+
+## Final review status
+
+`REVIEW_READY_WITH_CAVEATS`; not public-dispatched.
