@@ -45,5 +45,13 @@
   "held_testers": {
     "gabriel-great": "blocked_setup_security_audit_pending",
     "samuel-adegboyega": "optional_only_if_admin_assigns"
-  }
+  },
+  "dispatch_review_requested_at": "2026-06-09T10:20:10Z",
+  "dispatch_review_target_channel_id": "1511147437329485977",
+  "dispatch_review_message_id": "1513850186827567105",
+  "approval_message_ids": [
+    "1513850186827567105"
+  ],
+  "approval_notified_at": "2026-06-09T10:20:10Z",
+  "approval_status": "pending_henry_admin_decision"
 }
