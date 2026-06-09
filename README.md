@@ -28,7 +28,7 @@ Core rule: **human QA is the release gate; automation is support/preflight.**
 | `v2026.6.5-beta.2` | closed_initial_dry_run | [folder](runs/v2026.6.5-beta.2/) | [instructions](runs/v2026.6.5-beta.2/tester-instructions.md) | [closeout](runs/v2026.6.5-beta.2/closeout-report.md) |
 | `v2026.6.5-beta.3` | closed_initial_dry_run | [folder](runs/v2026.6.5-beta.3/) | [instructions](runs/v2026.6.5-beta.3/tester-instructions.md) | [closeout](runs/v2026.6.5-beta.3/closeout-report.md) |
 | `v2026.6.5-beta.5` | closed_initial_dry_run | [folder](runs/v2026.6.5-beta.5/) | [instructions](runs/v2026.6.5-beta.5/tester-instructions.md) | [closeout](runs/v2026.6.5-beta.5/closeout-report.md) |
-| `v2026.6.5-beta.6` | closed_initial_dry_run | [folder](runs/v2026.6.5-beta.6/) | [instructions](runs/v2026.6.5-beta.6/tester-instructions.md) | [closeout](runs/v2026.6.5-beta.6/closeout-report.md) |
+| `v2026.6.5-beta.6` | review_ready_with_caveats | [folder](runs/v2026.6.5-beta.6/) | [instructions](runs/v2026.6.5-beta.6/tester-instructions.md) | [closeout](runs/v2026.6.5-beta.6/closeout-report.md) |
 
 ## Tester Flow
 
