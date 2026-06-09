@@ -1,7 +1,7 @@
 {
   "tag": "v2026.6.5-beta.6",
   "repo": "openclaw/openclaw",
-  "status": "closed_initial_dry_run",
+  "status": "review_ready_with_caveats",
   "owner_agent": "book",
   "created_at": "2026-06-09T09:00:32.089927+00:00",
   "freshness": {
@@ -18,7 +18,8 @@
     "github_run_folder": "https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.5-beta.6",
     "github_pages_run": null,
     "discord_thread": null,
-    "entity_internal_card": null
+    "entity_internal_card": null,
+    "approval_packet": "https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.5-beta.6/approval-packet.md"
   },
   "testers": [],
   "upstream_issues": [],
@@ -26,8 +27,23 @@
     "receipts/github-fetch.json",
     "receipts/collect-reports.json",
     "receipts/issue-dedupe.json",
-    "receipts/issue-file-results.json"
+    "receipts/issue-file-results.json",
+    "approval-packet.md"
   ],
   "tester_instructions_generated_at": "2026-06-09T09:00:36Z",
-  "closeout_generated_at": "2026-06-09T09:00:36Z"
+  "closeout_generated_at": "2026-06-09T09:00:36Z",
+  "qa_checklist_completed_at": "2026-06-09T10:18:00Z",
+  "adversarial_review_completed_at": "2026-06-09T10:18:00Z",
+  "approval_packet_created_at": "2026-06-09T10:18:00Z",
+  "public_dispatch_approved": false,
+  "github_issue_creation_approved": false,
+  "recommended_first_wave": [
+    "ayomide",
+    "miriampeter",
+    "annywrld"
+  ],
+  "held_testers": {
+    "gabriel-great": "blocked_setup_security_audit_pending",
+    "samuel-adegboyega": "optional_only_if_admin_assigns"
+  }
 }
