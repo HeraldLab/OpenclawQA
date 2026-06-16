@@ -1,21 +1,21 @@
 {
-  "tag": "v2026.6.7-beta.1",
+  "tag": "v2026.6.8-beta.2",
   "repo": "openclaw/openclaw",
   "status": "closed_initial_dry_run",
   "owner_agent": "book",
-  "created_at": "2026-06-13T10:00:26.400174+00:00",
+  "created_at": "2026-06-16T02:00:57.417608+00:00",
   "freshness": {
-    "trigger_checked_at": "2026-06-15T06:19:27Z",
+    "trigger_checked_at": "2026-06-16T02:01:01Z",
     "pre_send_checked_at": null,
-    "primary_target": "v2026.6.7-beta.1",
+    "primary_target": "v2026.6.8-beta.2",
     "stable_baseline": "v2026.6.6",
     "prior_prerelease_baseline": "v2026.6.8-beta.1",
-    "latest_alpha": "v2026.6.10-alpha.2",
-    "latest_beta": "v2026.6.8-beta.1",
+    "latest_alpha": "v2026.6.15-alpha.1",
+    "latest_beta": "v2026.6.8-beta.2",
     "target_exists": true
   },
   "links": {
-    "github_run_folder": "https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.7-beta.1",
+    "github_run_folder": "https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.8-beta.2",
     "github_pages_run": null,
     "discord_thread": null,
     "entity_internal_card": null
@@ -28,6 +28,6 @@
     "receipts/issue-dedupe.json",
     "receipts/issue-file-results.json"
   ],
-  "tester_instructions_generated_at": "2026-06-13T10:00:32Z",
-  "closeout_generated_at": "2026-06-13T10:00:35Z"
+  "tester_instructions_generated_at": "2026-06-16T02:01:02Z",
+  "closeout_generated_at": "2026-06-16T02:01:04Z"
 }

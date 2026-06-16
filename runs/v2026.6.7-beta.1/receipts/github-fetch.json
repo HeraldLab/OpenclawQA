@@ -1,18 +1,25 @@
 {
-  "fetched_at": "2026-06-13T10:00:32Z",
+  "fetched_at": "2026-06-15T06:19:27Z",
   "target_tag": "v2026.6.7-beta.1",
   "target_exists": true,
   "target_release_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.7-beta.1",
   "target_tag_sha": "45a103a903872bcf6b26d5eba4cc2db0ff68bc69",
-  "latest_beta": "v2026.6.7-beta.1",
+  "latest_beta": "v2026.6.8-beta.1",
   "latest_alpha": "v2026.6.10-alpha.2",
   "stable_baseline": "v2026.6.6",
-  "prior_prerelease_baseline": "v2026.6.6-beta.2",
+  "prior_prerelease_baseline": "v2026.6.8-beta.1",
   "release_count_checked": 100,
   "tag_count_checked": 100,
-  "issue_count_checked": 8,
+  "issue_count_checked": 4,
   "pr_count_checked": 30,
   "recent_releases": [
+    {
+      "tag_name": "v2026.6.8-beta.1",
+      "name": "openclaw 2026.6.8-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-14T22:45:33Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.1"
+    },
     {
       "tag_name": "v2026.6.7-beta.1",
       "name": "openclaw 2026.6.7-beta.1",
@@ -145,13 +152,6 @@
       "prerelease": true,
       "published_at": "2026-05-31T17:44:50Z",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.1"
-    },
-    {
-      "tag_name": "v2026.5.30-beta.1",
-      "name": "openclaw 2026.5.30-beta.1",
-      "prerelease": true,
-      "published_at": "2026-05-31T02:39:53Z",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.30-beta.1"
     }
   ],
   "recent_tags": [
@@ -164,6 +164,14 @@
       "sha": "b2023596c5b90cf65e29459c92d8f8abdeee1cdb"
     },
     {
+      "name": "v2026.6.9-alpha.5",
+      "sha": "5e80dcda02efa7f51b9073a000a0c4dfda9dd466"
+    },
+    {
+      "name": "v2026.6.9-alpha.4",
+      "sha": "3c5e88f092650b5454d9baad570ca4516c89f90d"
+    },
+    {
       "name": "v2026.6.9-alpha.3",
       "sha": "5bd92eed29f0c1a89a0b8179b4ea278a4e2373b5"
     },
@@ -174,6 +182,14 @@
     {
       "name": "v2026.6.9-alpha.1",
       "sha": "9a7b9a2238babb4f079840c7d5a808153a68764b"
+    },
+    {
+      "name": "v2026.6.8-beta.1",
+      "sha": "43d00c7724b5b4856ad4055b2dcd21ce6ef61550"
+    },
+    {
+      "name": "v2026.6.8-alpha.2",
+      "sha": "231155139c6d05acefb0ce2aedfc35452e9d18d3"
     },
     {
       "name": "v2026.6.8-alpha.1",
@@ -258,46 +274,15 @@
     {
       "name": "v2026.6.5-alpha.1",
       "sha": "d12c242a8b363e43d99a1f82c6030d9112e857b0"
-    },
-    {
-      "name": "v2026.6.4-alpha.1",
-      "sha": "3f5bfb4a2b58df399089b14a93fbe28e442a091b"
-    },
-    {
-      "name": "v2026.6.3-alpha.1",
-      "sha": "645573a15774c8df43c88da7f38d360cd0c77a83"
-    },
-    {
-      "name": "v2026.6.2-beta.1",
-      "sha": "f03f57aa2a0a381bed0fdefd98ac583cb13f4472"
-    },
-    {
-      "name": "v2026.6.2-alpha.2",
-      "sha": "788dba4009237e6808dfdf4d5f29ca585dd9776e"
     }
   ],
   "recent_issues": [
     {
-      "number": 91016,
-      "title": "\u26a0\ufe0f \u5347\u7ea7 2026.6.1 \u540e DeepSeek Prompt Cache \u5b8c\u5168\u5931\u6548\uff0c\u4e00\u5c0f\u65f6\u70e7\u6389\u7ea6 $6",
-      "url": "https://github.com/openclaw/openclaw/issues/91016",
+      "number": 71211,
+      "title": "Security: exec tool returns raw stdout/stderr to agent without secret redaction",
+      "url": "https://github.com/openclaw/openclaw/issues/71211",
       "labels": [
-        "P1",
-        "clawsweeper:no-new-fix-pr",
-        "clawsweeper:fix-shape-clear",
-        "clawsweeper:needs-maintainer-review",
-        "clawsweeper:needs-product-decision",
-        "clawsweeper:needs-info",
-        "impact:auth-provider",
-        "issue-rating: \ud83e\udd90 gold shrimp"
-      ]
-    },
-    {
-      "number": 39847,
-      "title": "Echo contamination: stripInboundMetadata not called in outbound delivery pipeline",
-      "url": "https://github.com/openclaw/openclaw/issues/39847",
-      "labels": [
-        "stale",
+        "security",
         "P1",
         "clawsweeper:no-new-fix-pr",
         "clawsweeper:needs-security-review",
@@ -308,279 +293,226 @@
       ]
     },
     {
-      "number": 39688,
-      "title": "[Bug]: Internal hooks (message:received, message:sent) \u8fd4\u56de\u5185\u5bb9\u6ca1\u6709\u53d1\u9001\u7ed9\u7528\u6237",
-      "url": "https://github.com/openclaw/openclaw/issues/39688",
+      "number": 90588,
+      "title": "[Bug] v2026.5.28 ~ v2026.6.1: All QQ Bot agents unresponsive \u2014 Cannot read properties of undefined (reading 'run')",
+      "url": "https://github.com/openclaw/openclaw/issues/90588",
       "labels": [
-        "bug",
-        "bug:behavior",
-        "P2",
-        "clawsweeper:no-new-fix-pr",
-        "clawsweeper:fix-shape-clear",
-        "clawsweeper:needs-maintainer-review",
-        "clawsweeper:needs-product-decision",
-        "clawsweeper:source-repro",
-        "clawsweeper:linked-pr-open",
-        "impact:message-loss",
-        "issue-rating: \ud83e\udd9e diamond lobster"
-      ]
-    },
-    {
-      "number": 54253,
-      "title": "[Bug]: OpenClaw returns \"run Error : LLM Request Failed\" on RISC-V64 System.",
-      "url": "https://github.com/openclaw/openclaw/issues/54253",
-      "labels": [
-        "bug",
-        "stale",
-        "bug:behavior",
-        "P2",
-        "clawsweeper:no-new-fix-pr",
-        "clawsweeper:needs-maintainer-review",
-        "clawsweeper:needs-product-decision",
-        "clawsweeper:needs-info",
-        "impact:auth-provider",
-        "issue-rating: \ud83e\uddaa silver shellfish"
-      ]
-    },
-    {
-      "number": 39685,
-      "title": "[Feature]: Network Access Control (allowedDomains / denyDomains) \u2014 Egress Firewall",
-      "url": "https://github.com/openclaw/openclaw/issues/39685",
-      "labels": [
-        "enhancement",
         "P1",
         "clawsweeper:no-new-fix-pr",
-        "clawsweeper:fix-shape-clear",
         "clawsweeper:needs-maintainer-review",
-        "clawsweeper:needs-product-decision",
-        "clawsweeper:needs-security-review",
-        "impact:security",
-        "issue-rating: \ud83c\udf0a off-meta tidepool"
-      ]
-    },
-    {
-      "number": 39680,
-      "title": "[Bug] Sandbox validateEnvVarValue base64 heuristic false-positives on legitimate long alphanumeric values",
-      "url": "https://github.com/openclaw/openclaw/issues/39680",
-      "labels": [
-        "P2",
-        "clawsweeper:no-new-fix-pr",
-        "clawsweeper:needs-product-decision",
-        "clawsweeper:needs-security-review",
-        "clawsweeper:source-repro",
-        "clawsweeper:linked-pr-open",
-        "impact:security",
-        "issue-rating: \ud83e\udd9e diamond lobster"
-      ]
-    },
-    {
-      "number": 39588,
-      "title": "[Bug]: macOS app 'Launch at login' stops sticking / appears to turn itself off after app updates",
-      "url": "https://github.com/openclaw/openclaw/issues/39588",
-      "labels": [
-        "P2",
-        "clawsweeper:no-new-fix-pr",
-        "clawsweeper:needs-maintainer-review",
-        "clawsweeper:needs-product-decision",
         "clawsweeper:needs-live-repro",
-        "impact:data-loss",
+        "impact:message-loss",
+        "impact:auth-provider",
+        "impact:crash-loop",
         "issue-rating: \ud83d\udc1a platinum hermit"
       ]
     },
     {
-      "number": 39406,
-      "title": "Feature request: config option to suppress transient tool error warnings",
-      "url": "https://github.com/openclaw/openclaw/issues/39406",
+      "number": 54578,
+      "title": "Add tree view command to visualize active agents",
+      "url": "https://github.com/openclaw/openclaw/issues/54578",
       "labels": [
-        "P2",
+        "P3",
         "clawsweeper:no-new-fix-pr",
         "clawsweeper:needs-maintainer-review",
         "clawsweeper:needs-product-decision",
-        "clawsweeper:source-repro",
-        "impact:message-loss",
-        "issue-rating: \ud83e\udd9e diamond lobster"
+        "impact:session-state",
+        "issue-rating: \ud83c\udf0a off-meta tidepool"
+      ]
+    },
+    {
+      "number": 54373,
+      "title": "[RFC] Context Provenance: Add source/volatility metadata to injected context segments",
+      "url": "https://github.com/openclaw/openclaw/issues/54373",
+      "labels": [
+        "P3",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:needs-product-decision",
+        "clawsweeper:linked-pr-open",
+        "impact:session-state",
+        "issue-rating: \ud83c\udf0a off-meta tidepool"
       ]
     }
   ],
   "recent_prs": [
     {
-      "number": 92356,
-      "title": "fix(heartbeat): skip reasoning payloads when selecting heartbeat reply",
-      "url": "https://github.com/openclaw/openclaw/pull/92356",
+      "number": 92428,
+      "title": "fix(qqbot): keep markdown table chunks valid",
+      "url": "https://github.com/openclaw/openclaw/pull/92428",
       "draft": false
     },
     {
-      "number": 90057,
-      "title": "Polish Workboard operations view",
-      "url": "https://github.com/openclaw/openclaw/pull/90057",
+      "number": 93187,
+      "title": "fix(memory-core): exclude archive transcripts from dreaming corpus and propagate cron parentage to subagents",
+      "url": "https://github.com/openclaw/openclaw/pull/93187",
       "draft": false
     },
     {
-      "number": 92650,
-      "title": "fix #92465: split OpenAI 431 embedding batches",
-      "url": "https://github.com/openclaw/openclaw/pull/92650",
+      "number": 78664,
+      "title": "perf(agents): cache provider tool schema normalization",
+      "url": "https://github.com/openclaw/openclaw/pull/78664",
       "draft": false
     },
     {
-      "number": 92639,
-      "title": "fix(memory): keep memory_search in transient qmd mode",
-      "url": "https://github.com/openclaw/openclaw/pull/92639",
+      "number": 93188,
+      "title": "test(macos): cover root CLI command parsing",
+      "url": "https://github.com/openclaw/openclaw/pull/93188",
+      "draft": false
+    },
+    {
+      "number": 93184,
+      "title": "fix(ui): preserve live tool stream order",
+      "url": "https://github.com/openclaw/openclaw/pull/93184",
+      "draft": false
+    },
+    {
+      "number": 93149,
+      "title": "feat(cron): add add dry-run preview",
+      "url": "https://github.com/openclaw/openclaw/pull/93149",
+      "draft": false
+    },
+    {
+      "number": 69199,
+      "title": "fix(memory): improve error message when node:sqlite is unavailable",
+      "url": "https://github.com/openclaw/openclaw/pull/69199",
+      "draft": false
+    },
+    {
+      "number": 70046,
+      "title": "fix(cron): support HH:MM time-only strings in --at; apply --tz to time-only input",
+      "url": "https://github.com/openclaw/openclaw/pull/70046",
+      "draft": false
+    },
+    {
+      "number": 92680,
+      "title": "feat(read): add encoding parameter for GBK and non-UTF-8 text files (#92664)",
+      "url": "https://github.com/openclaw/openclaw/pull/92680",
+      "draft": false
+    },
+    {
+      "number": 93186,
+      "title": "fix(cache): stable tool result aggregate truncation",
+      "url": "https://github.com/openclaw/openclaw/pull/93186",
+      "draft": false
+    },
+    {
+      "number": 45901,
+      "title": "security: create session dirs with private permissions",
+      "url": "https://github.com/openclaw/openclaw/pull/45901",
+      "draft": false
+    },
+    {
+      "number": 93151,
+      "title": "#92664: fix(read): decode GBK-encoded files on Chinese Windows via existing decoder",
+      "url": "https://github.com/openclaw/openclaw/pull/93151",
+      "draft": false
+    },
+    {
+      "number": 93185,
+      "title": "[codex] fix(telegram): drop unused rich markdown parameter",
+      "url": "https://github.com/openclaw/openclaw/pull/93185",
+      "draft": false
+    },
+    {
+      "number": 84896,
+      "title": "fix(memory): export LanceDB artifacts for wiki bridge",
+      "url": "https://github.com/openclaw/openclaw/pull/84896",
+      "draft": false
+    },
+    {
+      "number": 93174,
+      "title": "test: fold channel message flows into qa e2e",
+      "url": "https://github.com/openclaw/openclaw/pull/93174",
+      "draft": false
+    },
+    {
+      "number": 88750,
+      "title": "feat(context-engine): pass runtime settings into lifecycle",
+      "url": "https://github.com/openclaw/openclaw/pull/88750",
+      "draft": false
+    },
+    {
+      "number": 87739,
+      "title": "Telegram: keep long DM turns alive through progress previews",
+      "url": "https://github.com/openclaw/openclaw/pull/87739",
+      "draft": false
+    },
+    {
+      "number": 75066,
+      "title": "fix(sessions): preserve activity for compaction metadata",
+      "url": "https://github.com/openclaw/openclaw/pull/75066",
+      "draft": false
+    },
+    {
+      "number": 74954,
+      "title": "fix(agents): prevent provider defaultModel from overriding agents.defaults.model (fixes #24170)",
+      "url": "https://github.com/openclaw/openclaw/pull/74954",
+      "draft": false
+    },
+    {
+      "number": 47604,
+      "title": "feat(android): add Wear OS app MVP",
+      "url": "https://github.com/openclaw/openclaw/pull/47604",
+      "draft": false
+    },
+    {
+      "number": 93179,
+      "title": "excludeTestExecution option for more compact QA profile evidence",
+      "url": "https://github.com/openclaw/openclaw/pull/93179",
+      "draft": false
+    },
+    {
+      "number": 93183,
+      "title": "[codex] Fix /btw Codex runtime side-question routing",
+      "url": "https://github.com/openclaw/openclaw/pull/93183",
       "draft": true
     },
     {
-      "number": 87504,
-      "title": "fix(skill-workshop): align agent_end hook timeout with max reviewer timeout",
-      "url": "https://github.com/openclaw/openclaw/pull/87504",
+      "number": 93175,
+      "title": "Add smoke-ci primary scorecard evidence",
+      "url": "https://github.com/openclaw/openclaw/pull/93175",
       "draft": false
     },
     {
-      "number": 40311,
-      "title": "feat(web-search): expose Brave Goggles for custom search filtering and ranking",
-      "url": "https://github.com/openclaw/openclaw/pull/40311",
+      "number": 91193,
+      "title": "fix(cli): document Commander rawArgs internal API dependency in action-reparse.ts",
+      "url": "https://github.com/openclaw/openclaw/pull/91193",
       "draft": false
     },
     {
-      "number": 92642,
-      "title": "fix #86872: Subagent run reports success but fails to write output file",
-      "url": "https://github.com/openclaw/openclaw/pull/92642",
+      "number": 91192,
+      "title": "fix(tts): allow trusted local media in message_tool_only mode",
+      "url": "https://github.com/openclaw/openclaw/pull/91192",
       "draft": false
     },
     {
-      "number": 92649,
-      "title": "feat(kimi): show code quota in usage status",
-      "url": "https://github.com/openclaw/openclaw/pull/92649",
+      "number": 91180,
+      "title": "feat(whatsapp): support opt-in group-name config",
+      "url": "https://github.com/openclaw/openclaw/pull/91180",
       "draft": false
     },
     {
-      "number": 88815,
-      "title": "feat: channel echo / session pinning",
-      "url": "https://github.com/openclaw/openclaw/pull/88815",
+      "number": 91177,
+      "title": "fix(tui): persist canonical provider in session modelProvider",
+      "url": "https://github.com/openclaw/openclaw/pull/91177",
       "draft": false
     },
     {
-      "number": 41375,
-      "title": "fix(hooks): deliver internal hook replies on replyable surfaces",
-      "url": "https://github.com/openclaw/openclaw/pull/41375",
+      "number": 78441,
+      "title": "feat(subagents): forward toolsAllow from sessions_spawn",
+      "url": "https://github.com/openclaw/openclaw/pull/78441",
       "draft": false
     },
     {
-      "number": 39496,
-      "title": "feat(feishu): comprehensive plugin enhancements \u2014 streaming, dedup, skills, calendar, and stability",
-      "url": "https://github.com/openclaw/openclaw/pull/39496",
+      "number": 91162,
+      "title": "fix(cron): honor configured delivery.channel instead of misrouting (#46899)",
+      "url": "https://github.com/openclaw/openclaw/pull/91162",
       "draft": false
     },
     {
-      "number": 92643,
-      "title": "#92076: Subagent completion delivery can fail when requester run is inactive and session transcript is locked",
-      "url": "https://github.com/openclaw/openclaw/pull/92643",
-      "draft": false
-    },
-    {
-      "number": 92641,
-      "title": "fix(memory): run memory+supplement searches in parallel for corpus=all (fixes #92633)",
-      "url": "https://github.com/openclaw/openclaw/pull/92641",
-      "draft": false
-    },
-    {
-      "number": 85696,
-      "title": "fix(agent): use static catalog for embedded model fast path",
-      "url": "https://github.com/openclaw/openclaw/pull/85696",
-      "draft": true
-    },
-    {
-      "number": 41275,
-      "title": "fix(cron): allow timeoutSeconds: 0 for no-timeout mode",
-      "url": "https://github.com/openclaw/openclaw/pull/41275",
-      "draft": false
-    },
-    {
-      "number": 41892,
-      "title": "feat(control-ui): add cron calendar timeline view",
-      "url": "https://github.com/openclaw/openclaw/pull/41892",
-      "draft": false
-    },
-    {
-      "number": 90861,
-      "title": "fix #77426: [Bug]:sessions_yield: always returns \"No session context\" on MCP/claude-cli agent runtime path (gateway tool resolver missing sessionId + onYield)",
-      "url": "https://github.com/openclaw/openclaw/pull/90861",
-      "draft": false
-    },
-    {
-      "number": 90090,
-      "title": "fix(plugins): guard runtime boundary manifest rows",
-      "url": "https://github.com/openclaw/openclaw/pull/90090",
-      "draft": true
-    },
-    {
-      "number": 92648,
-      "title": "#92523: Bug: Orphaned TaskFlows in `waiting` status permanently block agent heartbeats (requests-in-flight deadlock)",
-      "url": "https://github.com/openclaw/openclaw/pull/92648",
-      "draft": false
-    },
-    {
-      "number": 42617,
-      "title": "feat(pairing): add configurable pairingMessage text per channel (#41058)",
-      "url": "https://github.com/openclaw/openclaw/pull/42617",
-      "draft": false
-    },
-    {
-      "number": 39386,
-      "title": "fix(gateway): forward child session node events to spawnedBy subscribers",
-      "url": "https://github.com/openclaw/openclaw/pull/39386",
-      "draft": true
-    },
-    {
-      "number": 92647,
-      "title": "fix(memory): attribute corpus=all timeouts to the slow branch instead of the provider",
-      "url": "https://github.com/openclaw/openclaw/pull/92647",
-      "draft": false
-    },
-    {
-      "number": 92617,
-      "title": "[Bug]: `openclaw plugins update whatsapp` silently wipes Baileys session \u2014 full QR re-pair required after every minor plugin update",
-      "url": "https://github.com/openclaw/openclaw/pull/92617",
-      "draft": false
-    },
-    {
-      "number": 92623,
-      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494)",
-      "url": "https://github.com/openclaw/openclaw/pull/92623",
-      "draft": false
-    },
-    {
-      "number": 92555,
-      "title": "ci: gate stable releases on Windows companion assets",
-      "url": "https://github.com/openclaw/openclaw/pull/92555",
-      "draft": false
-    },
-    {
-      "number": 90745,
-      "title": "fix: carry reply metadata into runtime context",
-      "url": "https://github.com/openclaw/openclaw/pull/90745",
-      "draft": false
-    },
-    {
-      "number": 92590,
-      "title": "Docker image ships an extraneous stale openclaw in /app/node_modules (extensions pin the published release)",
-      "url": "https://github.com/openclaw/openclaw/pull/92590",
-      "draft": false
-    },
-    {
-      "number": 92644,
-      "title": "fix(openrouter): strip openrouter/ prefix from model IDs before API calls",
-      "url": "https://github.com/openclaw/openclaw/pull/92644",
-      "draft": false
-    },
-    {
-      "number": 81721,
-      "title": "Add diarized JSON transcript segments to media-understanding audio providers",
-      "url": "https://github.com/openclaw/openclaw/pull/81721",
-      "draft": false
-    },
-    {
-      "number": 91632,
-      "title": "feat: add tool search directory mode",
-      "url": "https://github.com/openclaw/openclaw/pull/91632",
+      "number": 91161,
+      "title": "fix: prevent A2A target from reverse-calling sessions_send to requester (#39476)",
+      "url": "https://github.com/openclaw/openclaw/pull/91161",
       "draft": false
     }
   ]
