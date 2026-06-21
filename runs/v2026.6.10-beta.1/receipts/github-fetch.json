@@ -1,0 +1,554 @@
+{
+  "fetched_at": "2026-06-21T09:30:41Z",
+  "target_tag": "v2026.6.10-beta.1",
+  "target_exists": true,
+  "target_release_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.1",
+  "target_tag_sha": "d91c1607c4d254b6dafa2ea052aef82e68b0c1b0",
+  "latest_beta": "v2026.6.10-beta.1",
+  "latest_alpha": "v2026.6.20-alpha.1",
+  "stable_baseline": "v2026.6.9",
+  "prior_prerelease_baseline": "v2026.6.9-beta.1",
+  "release_count_checked": 100,
+  "tag_count_checked": 100,
+  "issue_count_checked": 6,
+  "pr_count_checked": 30,
+  "recent_releases": [
+    {
+      "tag_name": "v2026.6.10-beta.1",
+      "name": "openclaw 2026.6.10-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-21T09:12:41Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.9",
+      "name": "openclaw 2026.6.9",
+      "prerelease": false,
+      "published_at": "2026-06-21T01:44:28Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9"
+    },
+    {
+      "tag_name": "v2026.6.9-beta.1",
+      "name": "openclaw 2026.6.9-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-19T05:52:39Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.8",
+      "name": "openclaw 2026.6.8",
+      "prerelease": false,
+      "published_at": "2026-06-16T16:32:26Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8"
+    },
+    {
+      "tag_name": "v2026.6.8-beta.2",
+      "name": "openclaw 2026.6.8-beta.2",
+      "prerelease": true,
+      "published_at": "2026-06-16T01:50:19Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.2"
+    },
+    {
+      "tag_name": "v2026.6.8-beta.1",
+      "name": "openclaw 2026.6.8-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-14T22:45:33Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.7-beta.1",
+      "name": "openclaw 2026.6.7-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-13T09:42:35Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.7-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.6",
+      "name": "openclaw 2026.6.6",
+      "prerelease": false,
+      "published_at": "2026-06-12T11:04:42Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6"
+    },
+    {
+      "tag_name": "v2026.6.6-beta.2",
+      "name": "openclaw 2026.6.6-beta.2",
+      "prerelease": true,
+      "published_at": "2026-06-12T03:32:42Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.2"
+    },
+    {
+      "tag_name": "v2026.6.6-beta.1",
+      "name": "OpenClaw 2026.6.6-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-10T19:33:39Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.5",
+      "name": "openclaw 2026.6.5",
+      "prerelease": false,
+      "published_at": "2026-06-09T18:13:20Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5"
+    },
+    {
+      "tag_name": "v2026.6.5-beta.6",
+      "name": "openclaw 2026.6.5-beta.6",
+      "prerelease": true,
+      "published_at": "2026-06-09T08:43:04Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.6"
+    },
+    {
+      "tag_name": "v2026.6.5-beta.5",
+      "name": "openclaw 2026.6.5-beta.5",
+      "prerelease": true,
+      "published_at": "2026-06-08T22:49:14Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.5"
+    },
+    {
+      "tag_name": "v2026.6.5-beta.3",
+      "name": "OpenClaw 2026.6.5-beta.3",
+      "prerelease": true,
+      "published_at": "2026-06-08T21:38:14Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.3"
+    },
+    {
+      "tag_name": "v2026.6.5-beta.2",
+      "name": "openclaw 2026.6.5-beta.2",
+      "prerelease": true,
+      "published_at": "2026-06-07T00:26:39Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.2"
+    },
+    {
+      "tag_name": "v2026.6.5-beta.1",
+      "name": "openclaw 2026.6.5-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-06T03:36:51Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.2-beta.1",
+      "name": "openclaw 2026.6.2-beta.1",
+      "prerelease": true,
+      "published_at": "2026-06-03T23:46:41Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.2-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.1",
+      "name": "openclaw 2026.6.1",
+      "prerelease": false,
+      "published_at": "2026-06-03T19:35:12Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1"
+    },
+    {
+      "tag_name": "v2026.6.1-beta.3",
+      "name": "openclaw 2026.6.1-beta.3",
+      "prerelease": true,
+      "published_at": "2026-06-03T09:16:02Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.3"
+    },
+    {
+      "tag_name": "v2026.6.1-beta.2",
+      "name": "openclaw 2026.6.1-beta.2",
+      "prerelease": true,
+      "published_at": "2026-06-01T21:56:19Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2"
+    }
+  ],
+  "recent_tags": [
+    {
+      "name": "v2026.6.20-alpha.1",
+      "sha": "3ff8242a090a806d2751244c68e3be2bde77cfa8"
+    },
+    {
+      "name": "v2026.6.19-alpha.2",
+      "sha": "4493a781312a0b5903af479034771ddfff20d68c"
+    },
+    {
+      "name": "v2026.6.19-alpha.1",
+      "sha": "35d0e4d66d8310fec64436ef2d6312d8bb5fdeb7"
+    },
+    {
+      "name": "v2026.6.15-alpha.1",
+      "sha": "f85ad97921f5eeb61251405b970673322f4df4fa"
+    },
+    {
+      "name": "v2026.6.10-beta.1",
+      "sha": "d91c1607c4d254b6dafa2ea052aef82e68b0c1b0"
+    },
+    {
+      "name": "v2026.6.10-alpha.3",
+      "sha": "ab7bd17b8f016fdae2243f02c01792d7365d1c2b"
+    },
+    {
+      "name": "v2026.6.10-alpha.2",
+      "sha": "429c3f9e2a4f3bde0df5027d1468be65b5de095f"
+    },
+    {
+      "name": "v2026.6.10-alpha.1",
+      "sha": "b2023596c5b90cf65e29459c92d8f8abdeee1cdb"
+    },
+    {
+      "name": "v2026.6.9",
+      "sha": "c645ec4555c017931de0e35ad9847dffae2741ef"
+    },
+    {
+      "name": "v2026.6.9-beta.1",
+      "sha": "687234af56e1f7c2b4037faa9ab2041b159dccf1"
+    },
+    {
+      "name": "v2026.6.9-alpha.6",
+      "sha": "500f425019cedcbe19a6b9cc4200790b45078a63"
+    },
+    {
+      "name": "v2026.6.9-alpha.5",
+      "sha": "5e80dcda02efa7f51b9073a000a0c4dfda9dd466"
+    },
+    {
+      "name": "v2026.6.9-alpha.4",
+      "sha": "3c5e88f092650b5454d9baad570ca4516c89f90d"
+    },
+    {
+      "name": "v2026.6.9-alpha.3",
+      "sha": "5bd92eed29f0c1a89a0b8179b4ea278a4e2373b5"
+    },
+    {
+      "name": "v2026.6.9-alpha.2",
+      "sha": "61ce213a31611a7ebe3190f92e3d6b356bf0de20"
+    },
+    {
+      "name": "v2026.6.9-alpha.1",
+      "sha": "9a7b9a2238babb4f079840c7d5a808153a68764b"
+    },
+    {
+      "name": "v2026.6.8",
+      "sha": "844f405ac1be805d5c598922a37254f12ab6d765"
+    },
+    {
+      "name": "v2026.6.8-beta.2",
+      "sha": "b1736723d716b1abe1f8d324772371661146f3b8"
+    },
+    {
+      "name": "v2026.6.8-beta.1",
+      "sha": "43d00c7724b5b4856ad4055b2dcd21ce6ef61550"
+    },
+    {
+      "name": "v2026.6.8-alpha.2",
+      "sha": "231155139c6d05acefb0ce2aedfc35452e9d18d3"
+    },
+    {
+      "name": "v2026.6.8-alpha.1",
+      "sha": "aef64af17a9d396df4010edcbbbd26732e5aae36"
+    },
+    {
+      "name": "v2026.6.7-beta.1",
+      "sha": "45a103a903872bcf6b26d5eba4cc2db0ff68bc69"
+    },
+    {
+      "name": "v2026.6.7-alpha.6",
+      "sha": "e1ecefe7a3529f566a77f3f7e167d64dd4873291"
+    },
+    {
+      "name": "v2026.6.7-alpha.5",
+      "sha": "e75e67841bc7d2381e69ba24eb054ff1626010e5"
+    },
+    {
+      "name": "v2026.6.7-alpha.4",
+      "sha": "d651a8254eae4d0306aa8d16943bee4b97c24c59"
+    },
+    {
+      "name": "v2026.6.7-alpha.3",
+      "sha": "f6ac3f001b7a1dad04243083dcd3be7b031b38e7"
+    },
+    {
+      "name": "v2026.6.7-alpha.2",
+      "sha": "633fe9dc60ded3fb880ce8e1e3a1c4cb53e230c8"
+    },
+    {
+      "name": "v2026.6.7-alpha.1",
+      "sha": "98b58cef4451b1a19d8e0da2d74551c63c1d3a12"
+    },
+    {
+      "name": "v2026.6.6",
+      "sha": "8c802aa683510c7f7503597b54c3021733245e59"
+    },
+    {
+      "name": "v2026.6.6-beta.2",
+      "sha": "3129eed4de92d0ddc0209fbf195c790c3d73ab03"
+    }
+  ],
+  "recent_issues": [
+    {
+      "number": 87023,
+      "title": "[Feature]: First-class relay of MCP ImageContent (and other binary Content) to channel extensions (iMessage/BlueBubbles, Telegram, Signal, \u2026)",
+      "url": "https://github.com/openclaw/openclaw/issues/87023",
+      "labels": [
+        "enhancement",
+        "P2",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:needs-product-decision",
+        "clawsweeper:needs-security-review",
+        "clawsweeper:source-repro",
+        "impact:security",
+        "impact:message-loss",
+        "issue-rating: \ud83e\udd9e diamond lobster"
+      ]
+    },
+    {
+      "number": 88646,
+      "title": "Persist image understanding summaries for agent attachments",
+      "url": "https://github.com/openclaw/openclaw/issues/88646",
+      "labels": [
+        "stale",
+        "P2",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:fix-shape-clear",
+        "clawsweeper:needs-maintainer-review",
+        "clawsweeper:needs-product-decision",
+        "clawsweeper:source-repro",
+        "impact:session-state",
+        "impact:data-loss",
+        "issue-rating: \ud83e\udd9e diamond lobster"
+      ]
+    },
+    {
+      "number": 88568,
+      "title": "feat: support pinning / starring sessions for quick access",
+      "url": "https://github.com/openclaw/openclaw/issues/88568",
+      "labels": [
+        "stale",
+        "P3",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:fix-shape-clear",
+        "clawsweeper:needs-maintainer-review",
+        "clawsweeper:needs-product-decision",
+        "impact:session-state",
+        "issue-rating: \ud83c\udf0a off-meta tidepool"
+      ]
+    },
+    {
+      "number": 88373,
+      "title": "Windows post-onboarding provider switch path is not discoverable",
+      "url": "https://github.com/openclaw/openclaw/issues/88373",
+      "labels": [
+        "P3",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:source-repro",
+        "clawsweeper:linked-pr-open",
+        "impact:auth-provider",
+        "issue-rating: \ud83e\udd9e diamond lobster"
+      ]
+    },
+    {
+      "number": 87876,
+      "title": "Bug: Bedrock Converse Streaming silently aborts on long-context agent sessions (~6 min timeout, no retry, no fallback)",
+      "url": "https://github.com/openclaw/openclaw/issues/87876",
+      "labels": [
+        "P1",
+        "clawsweeper:source-repro",
+        "impact:session-state",
+        "impact:data-loss",
+        "impact:auth-provider",
+        "issue-rating: \ud83e\udd9e diamond lobster"
+      ]
+    },
+    {
+      "number": 86632,
+      "title": "OpenClaw local embedded Ollama/Qwen session fails live-data request that Pi coding agent handles via shell/curl",
+      "url": "https://github.com/openclaw/openclaw/issues/86632",
+      "labels": [
+        "P2",
+        "clawsweeper:no-new-fix-pr",
+        "clawsweeper:fix-shape-clear",
+        "clawsweeper:needs-maintainer-review",
+        "clawsweeper:needs-product-decision",
+        "clawsweeper:needs-security-review",
+        "clawsweeper:needs-live-repro",
+        "impact:security",
+        "impact:auth-provider",
+        "issue-rating: \ud83d\udc1a platinum hermit"
+      ]
+    }
+  ],
+  "recent_prs": [
+    {
+      "number": 95308,
+      "title": "fix(ci): filter ClawSweeper comment dispatches before token minting",
+      "url": "https://github.com/openclaw/openclaw/pull/95308",
+      "draft": false
+    },
+    {
+      "number": 95501,
+      "title": "fix(agents): classify generic external runner failure text as fallback-worthy",
+      "url": "https://github.com/openclaw/openclaw/pull/95501",
+      "draft": false
+    },
+    {
+      "number": 95307,
+      "title": "fix(gateway): surface cross-agent subagent sessions via allAgents flag (#95295)",
+      "url": "https://github.com/openclaw/openclaw/pull/95307",
+      "draft": false
+    },
+    {
+      "number": 95524,
+      "title": "fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted)",
+      "url": "https://github.com/openclaw/openclaw/pull/95524",
+      "draft": false
+    },
+    {
+      "number": 95522,
+      "title": "feat(telegram): unify progress fallback with assistant preview lane",
+      "url": "https://github.com/openclaw/openclaw/pull/95522",
+      "draft": false
+    },
+    {
+      "number": 95183,
+      "title": "fix(telegram): materialize streaming progress placeholders",
+      "url": "https://github.com/openclaw/openclaw/pull/95183",
+      "draft": false
+    },
+    {
+      "number": 93680,
+      "title": "feat(browser): My Browser node-anchored turn routing (stacks on #93411)",
+      "url": "https://github.com/openclaw/openclaw/pull/93680",
+      "draft": false
+    },
+    {
+      "number": 93187,
+      "title": "fix(memory-core): exclude archive transcripts from dreaming corpus and propagate cron parentage to subagents",
+      "url": "https://github.com/openclaw/openclaw/pull/93187",
+      "draft": false
+    },
+    {
+      "number": 94308,
+      "title": "feat(status): show session costs",
+      "url": "https://github.com/openclaw/openclaw/pull/94308",
+      "draft": false
+    },
+    {
+      "number": 67820,
+      "title": "fix(whatsapp): reuse active QR and preserve runtime warnings",
+      "url": "https://github.com/openclaw/openclaw/pull/67820",
+      "draft": false
+    },
+    {
+      "number": 95517,
+      "title": "fix(macos): recognize launchd Node.js gateway in PortGuardian sweep (fixes #94476) (AI-assisted)",
+      "url": "https://github.com/openclaw/openclaw/pull/95517",
+      "draft": false
+    },
+    {
+      "number": 95508,
+      "title": "fix #95489: [Bug]: claude-cli out-of-credits error bypasses model fallback chain \u2014 error text delivered as final response",
+      "url": "https://github.com/openclaw/openclaw/pull/95508",
+      "draft": false
+    },
+    {
+      "number": 62503,
+      "title": "feat: add devcontainer for cross-platform development",
+      "url": "https://github.com/openclaw/openclaw/pull/62503",
+      "draft": false
+    },
+    {
+      "number": 93168,
+      "title": "fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate",
+      "url": "https://github.com/openclaw/openclaw/pull/93168",
+      "draft": false
+    },
+    {
+      "number": 95527,
+      "title": "fix(scripts): type windows taskkill helper",
+      "url": "https://github.com/openclaw/openclaw/pull/95527",
+      "draft": false
+    },
+    {
+      "number": 88684,
+      "title": "Keep agent web_search on runtime provider resolution",
+      "url": "https://github.com/openclaw/openclaw/pull/88684",
+      "draft": false
+    },
+    {
+      "number": 88522,
+      "title": "Fix Telegram active-run ingress sequencing",
+      "url": "https://github.com/openclaw/openclaw/pull/88522",
+      "draft": true
+    },
+    {
+      "number": 95487,
+      "title": "feat(tts): strip emoji characters before speech synthesis (fixes #95478)",
+      "url": "https://github.com/openclaw/openclaw/pull/95487",
+      "draft": false
+    },
+    {
+      "number": 87958,
+      "title": "fix(agents): scale read output for small contexts",
+      "url": "https://github.com/openclaw/openclaw/pull/87958",
+      "draft": false
+    },
+    {
+      "number": 85671,
+      "title": "fix(outbound): auto-select single enabled message account",
+      "url": "https://github.com/openclaw/openclaw/pull/85671",
+      "draft": false
+    },
+    {
+      "number": 85670,
+      "title": "perf(doctor): parallel I/O for repair sequence and plugin dep cleanup (A1)",
+      "url": "https://github.com/openclaw/openclaw/pull/85670",
+      "draft": false
+    },
+    {
+      "number": 78606,
+      "title": "fix: keep origin-only approval delivery out of DMs",
+      "url": "https://github.com/openclaw/openclaw/pull/78606",
+      "draft": false
+    },
+    {
+      "number": 59859,
+      "title": "feat: cute GTK-native Linux App (#75)",
+      "url": "https://github.com/openclaw/openclaw/pull/59859",
+      "draft": false
+    },
+    {
+      "number": 75225,
+      "title": "feat(agents): add description field for dynamic agent discovery",
+      "url": "https://github.com/openclaw/openclaw/pull/75225",
+      "draft": false
+    },
+    {
+      "number": 49063,
+      "title": "Telegram: allow native channel commands in explicitly allowed chats",
+      "url": "https://github.com/openclaw/openclaw/pull/49063",
+      "draft": false
+    },
+    {
+      "number": 94772,
+      "title": "fix(gateway): cancel deferred channel reload when restart becomes pending",
+      "url": "https://github.com/openclaw/openclaw/pull/94772",
+      "draft": false
+    },
+    {
+      "number": 90610,
+      "title": "Surface Codex final answer candidates in activity",
+      "url": "https://github.com/openclaw/openclaw/pull/90610",
+      "draft": false
+    },
+    {
+      "number": 93841,
+      "title": "fix(ui): render persisted history text blocks",
+      "url": "https://github.com/openclaw/openclaw/pull/93841",
+      "draft": false
+    },
+    {
+      "number": 93351,
+      "title": "feat(cli): add --message-file to openclaw agent",
+      "url": "https://github.com/openclaw/openclaw/pull/93351",
+      "draft": false
+    },
+    {
+      "number": 43493,
+      "title": "feat: configure metadata (contextWindow, maxTokens, etc.) for custom provider setup",
+      "url": "https://github.com/openclaw/openclaw/pull/43493",
+      "draft": false
+    }
+  ]
+}
