@@ -1,6 +1,41 @@
 {
   "tag": "v2026.7.1-beta.1",
-  "deduped_at": "2026-07-02T08:01:28Z",
+  "deduped_at": "2026-07-04T10:46:33Z",
   "upstream_repo": "openclaw/openclaw",
-  "results": []
+  "results": [
+    {
+      "report": {
+        "number": 10,
+        "title": "[Install smoke]: PASS OpenClaw v2026.7.1-beta.1 Miriam Peter — Windows 11",
+        "url": "https://github.com/HeraldLab/OpenclawQA/issues/10",
+        "state": "open",
+        "labels": [
+          "status:needs-triage",
+          "area:install"
+        ],
+        "status": "status:needs-triage",
+        "author": "Odeyiany2",
+        "created_at": "2026-07-04T08:20:06Z",
+        "updated_at": "2026-07-04T08:20:06Z",
+        "has_evidence": true,
+        "body_chars": 2038
+      },
+      "query": "repo:openclaw/openclaw is:issue PASS v2026 1-beta Miriam Peter",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "number": 88372,
+          "title": "Windows provider switch leaves stale model/provider config and session cache",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/88372"
+        },
+        {
+          "number": 79099,
+          "title": "Windows gateway probe still reports unreachable while gateway health is OK on 2026.5.6",
+          "state": "closed",
+          "url": "https://github.com/openclaw/openclaw/issues/79099"
+        }
+      ]
+    }
+  ]
 }
