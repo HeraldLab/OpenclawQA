@@ -1,8 +1,60 @@
 {
   "tag": "v2026.7.1-beta.1",
-  "deduped_at": "2026-07-04T10:46:33Z",
+  "deduped_at": "2026-07-04T15:31:38Z",
   "upstream_repo": "openclaw/openclaw",
   "results": [
+    {
+      "report": {
+        "number": 11,
+        "title": "PASS — OpenClaw v2026.7.1-beta.1 QA (Windows / stale config migration)",
+        "url": "https://github.com/HeraldLab/OpenclawQA/issues/11",
+        "state": "open",
+        "labels": [
+          "status:needs-triage",
+          "area:install"
+        ],
+        "status": "status:needs-triage",
+        "author": "rlly-ritesh",
+        "created_at": "2026-07-04T14:08:25Z",
+        "updated_at": "2026-07-04T14:08:25Z",
+        "has_evidence": true,
+        "body_chars": 1262
+      },
+      "query": "repo:openclaw/openclaw is:issue PASS v2026 1-beta Windows stale",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "number": 88372,
+          "title": "Windows provider switch leaves stale model/provider config and session cache",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/88372"
+        },
+        {
+          "number": 90325,
+          "title": "[Bug]: Matrix channel dispatch broken in v2026.6.1 — TypeError: Cannot read properties of undefined (reading 'run')",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/90325"
+        },
+        {
+          "number": 85844,
+          "title": "Auto-update can leave running gateway with stale hashed bundle imports",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/85844"
+        },
+        {
+          "number": 71865,
+          "title": "Auth login blocked by size-drop guard when openclaw.json was created by PowerShell (verbose/BOM format)",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/71865"
+        },
+        {
+          "number": 66657,
+          "title": "TypeError: Cannot read properties of undefined (reading 'trim') on Feishu group messages with empty content",
+          "state": "open",
+          "url": "https://github.com/openclaw/openclaw/issues/66657"
+        }
+      ]
+    },
     {
       "report": {
         "number": 10,
@@ -10,13 +62,14 @@
         "url": "https://github.com/HeraldLab/OpenclawQA/issues/10",
         "state": "open",
         "labels": [
-          "status:needs-triage",
+          "status:validated",
+          "severity:low",
           "area:install"
         ],
-        "status": "status:needs-triage",
+        "status": "status:validated",
         "author": "Odeyiany2",
         "created_at": "2026-07-04T08:20:06Z",
-        "updated_at": "2026-07-04T08:20:06Z",
+        "updated_at": "2026-07-04T10:47:02Z",
         "has_evidence": true,
         "body_chars": 2038
       },

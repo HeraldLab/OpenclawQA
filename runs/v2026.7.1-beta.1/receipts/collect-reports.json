@@ -1,21 +1,38 @@
 {
   "tag": "v2026.7.1-beta.1",
-  "collected_at": "2026-07-04T10:46:30Z",
+  "collected_at": "2026-07-04T15:31:37Z",
   "repo": "HeraldLab/OpenclawQA",
   "reports": [
     {
-      "number": 10,
-      "title": "[Install smoke]: PASS OpenClaw v2026.7.1-beta.1 Miriam Peter — Windows 11",
-      "url": "https://github.com/HeraldLab/OpenclawQA/issues/10",
+      "number": 11,
+      "title": "PASS — OpenClaw v2026.7.1-beta.1 QA (Windows / stale config migration)",
+      "url": "https://github.com/HeraldLab/OpenclawQA/issues/11",
       "state": "open",
       "labels": [
         "status:needs-triage",
         "area:install"
       ],
       "status": "status:needs-triage",
+      "author": "rlly-ritesh",
+      "created_at": "2026-07-04T14:08:25Z",
+      "updated_at": "2026-07-04T14:08:25Z",
+      "has_evidence": true,
+      "body_chars": 1262
+    },
+    {
+      "number": 10,
+      "title": "[Install smoke]: PASS OpenClaw v2026.7.1-beta.1 Miriam Peter — Windows 11",
+      "url": "https://github.com/HeraldLab/OpenclawQA/issues/10",
+      "state": "open",
+      "labels": [
+        "status:validated",
+        "severity:low",
+        "area:install"
+      ],
+      "status": "status:validated",
       "author": "Odeyiany2",
       "created_at": "2026-07-04T08:20:06Z",
-      "updated_at": "2026-07-04T08:20:06Z",
+      "updated_at": "2026-07-04T10:47:02Z",
       "has_evidence": true,
       "body_chars": 2038
     }
