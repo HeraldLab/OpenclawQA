@@ -9,6 +9,15 @@ Fetched at: `2026-07-13T02:00:16Z`
 - Target release URL: https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.6
 - Target tag SHA: a783a2b283d1eacd91ba65a891a38c89b1e6f790
 
+## Community beta-ping context
+
+- Checked: `2026-07-13T19:53:11Z`
+- Channel: `#clawtributors` via Beeper/Discord
+- Exact `2026.7.1-beta.6` search: no dedicated message found.
+- Latest verified release-family ping: Vincent K, message `1700153`, `2026-07-11T11:08:55.303Z`, announcing `2026.7.1-beta.5`.
+- Explicit family asks: model/provider expansion; Control UI; Crestodian onboarding and session organization; mobile/native chat; `openclaw attach` and Codex; messaging reliability; security/operations.
+- Operational rule: re-check exact tag, release family, and newer `@Beta Pings` messages before every packet dispatch. Capture any correction or override before assigning testers.
+
 ## Freshness baselines
 
 - Latest beta tag: `v2026.7.1-beta.6`

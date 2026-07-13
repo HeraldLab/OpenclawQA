@@ -16,6 +16,17 @@ def main() -> int:
     run = load_json(rd / "run.json", {}) or {}
     release_context = (rd / "release-context.md").read_text(encoding="utf-8") if (rd / "release-context.md").exists() else ""
     latest_line = next((line for line in release_context.splitlines() if line.startswith("- Latest beta tag:")), "- Latest beta tag: `NOT_ENOUGH_INFO`")
+    community_lines: list[str] = []
+    in_community_section = False
+    for line in release_context.splitlines():
+        if line == "## Community beta-ping context":
+            in_community_section = True
+            continue
+        if in_community_section and line.startswith("## "):
+            break
+        if in_community_section and line.strip():
+            community_lines.append(line)
+    community_context = "\n".join(community_lines) if community_lines else "- Status: `NOT_CHECKED` — inspect `#clawtributors` before dispatch."
     report_url = f"https://github.com/{PUBLIC_REPO}/issues/new/choose"
     run_url = f"https://github.com/{PUBLIC_REPO}/tree/main/runs/{tag}"
     upstream_url = f"https://github.com/{UPSTREAM_REPO}/releases/tag/{tag}"
@@ -52,7 +63,18 @@ You should receive a short human QA card, not this whole operating model. The co
 
 1. **Universal baseline:** install/update, version proof, first response, one visible channel, plugin/tool sanity, safe failure, secrets check.
 2. **Your real setup:** OS, channel, provider/model route, available plugin, restart path.
-3. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
+3. **Community beta instructions:** the latest `#clawtributors` `@Beta Pings` post for the exact tag or release family.
+4. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
+
+### Mandatory community-ping gate
+
+Before dispatch, the coordinator must check `#clawtributors` for the exact tag, the release family, and newer `@Beta Pings` corrections posted since the prior beta. Record source message ID, author, timestamp, and extracted asks in `release-context.md`.
+
+If no exact-tag ping exists, say so explicitly and use the newest verified family-level ask unless a newer message overrides it. **Do not dispatch while status is `NOT_CHECKED`.**
+
+Current captured context:
+
+{community_context}
 
 Default card shape is 6–8 checks:
 
