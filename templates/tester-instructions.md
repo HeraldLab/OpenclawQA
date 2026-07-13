@@ -2,6 +2,12 @@
 
 Target tag: `<tag>`
 
+## Mandatory community-ping gate
+
+Before dispatch, check `#clawtributors` for the exact tag, release family, and newer `@Beta Pings` corrections since the prior beta. Record message ID, author, timestamp, and extracted test asks in the run's `release-context.md`.
+
+If no exact-tag ping exists, record that explicitly and use the newest verified family-level ask unless a newer message overrides it. Do not dispatch while community-ping status is `NOT_CHECKED`.
+
 ## Required evidence
 
 - Run the assigned human scenario cards manually; do not only run commands invisibly through an agent

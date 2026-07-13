@@ -31,7 +31,24 @@ You should receive a short human QA card, not this whole operating model. The co
 
 1. **Universal baseline:** install/update, version proof, first response, one visible channel, plugin/tool sanity, safe failure, secrets check.
 2. **Your real setup:** OS, channel, provider/model route, available plugin, restart path.
-3. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
+3. **Community beta instructions:** the latest `#clawtributors` `@Beta Pings` post for the exact tag or release family.
+4. **Release risk:** one or two delta scenarios from the release notes, commits, PRs, and current upstream issues.
+
+### Mandatory community-ping gate
+
+Before any packet is dispatched, the coordinator must check `#clawtributors` for:
+
+1. The exact target tag (`2026.7.1-beta.6`).
+2. The release family (`2026.7.1`) and `@Beta Pings` messages posted since the prior beta.
+3. Corrections, narrowed asks, or follow-up instructions newer than the original announcement.
+
+Record the source message ID, author, timestamp, and extracted test asks in the run artifacts. If no exact-tag ping exists, write that explicitly; then use the newest verified family-level ask, unless a newer message overrides it. **No unchecked packet dispatch.**
+
+For this run, checked at `2026-07-13T19:53:11Z`:
+
+- Exact `2026.7.1-beta.6` search: no dedicated ping found.
+- Latest verified family instruction: Vincent K, `#clawtributors`, message `1700153`, `2026-07-11T11:08:55.303Z`, for `2026.7.1-beta.5`.
+- Family-level focus areas carried into beta.6: model/provider expansion, Control UI, Crestodian onboarding, session organization, mobile/native chat, `openclaw attach`/Codex, messaging reliability, and security/operations.
 
 Default card shape is 6–8 checks:
 
@@ -69,6 +86,19 @@ Run assigned add-ons only:
 ## Release-delta add-ons
 
 The coordinator may assign one release-specific scenario derived from changed code or current upstream issue signals. Treat it as manual human QA: record the real flow, expected vs actual, confusion/trust notes, and evidence.
+
+### `2026.7.1` new-surface matrix
+
+Each beta.6 tester should run **at least two available rows** below. Use `NOT_AVAILABLE` with a short reason when a platform or dependency is unavailable.
+
+- **Control UI:** session-first sidebar/search, compact context ring, model/token details, reasoning slider, GitHub/file previews, Talk controls, and approval handling.
+- **Sessions:** generated titles, groups/unread state, rename, fork, archive, and delete. Check history, selected model, and ordering after each action.
+- **Crestodian onboarding:** on a fresh/safe profile only, check exact operation approvals, masked credentials, deterministic fallback, and recovery from one harmless failure.
+- **External agents:** `openclaw attach`/Claude Code or Codex app-server when available; connect, steer, disconnect, and reconnect without lost or duplicate turns.
+- **Mobile/native:** offline cache, reconnect recovery, agent switching, Apple Watch voice, Gateway TTS, or macOS native session chat where available.
+- **Messaging reliability:** retry/restart once and verify no duplicate, stale, leaked, or misrouted reply.
+
+Record usability defects and confusing states, not only crashes. One GitHub issue per bug.
 
 ## Report format
 
