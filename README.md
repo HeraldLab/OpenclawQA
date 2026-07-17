@@ -44,6 +44,7 @@ Core rule: **human QA is the release gate; automation is support/preflight.**
 | `v2026.7.1-beta.5` | closed_initial_dry_run | [folder](runs/v2026.7.1-beta.5/) | [instructions](runs/v2026.7.1-beta.5/tester-instructions.md) | [closeout](runs/v2026.7.1-beta.5/closeout-report.md) |
 | `v2026.7.1-beta.6` | closed_initial_dry_run | [folder](runs/v2026.7.1-beta.6/) | [instructions](runs/v2026.7.1-beta.6/tester-instructions.md) | [closeout](runs/v2026.7.1-beta.6/closeout-report.md) |
 | `v2026.7.2-beta.1` | closed_initial_dry_run | [folder](runs/v2026.7.2-beta.1/) | [instructions](runs/v2026.7.2-beta.1/tester-instructions.md) | [closeout](runs/v2026.7.2-beta.1/closeout-report.md) |
+| `v2026.7.2-beta.2` | closed_initial_dry_run | [folder](runs/v2026.7.2-beta.2/) | [instructions](runs/v2026.7.2-beta.2/tester-instructions.md) | [closeout](runs/v2026.7.2-beta.2/closeout-report.md) |
 
 ## Tester Flow
 
