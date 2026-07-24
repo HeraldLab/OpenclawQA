@@ -159,3 +159,24 @@ PRs are risk signals, not proof of shipped code in this tag.
 - PR #89104 draft=False fix(exec): expose termination metadata in tool details — https://github.com/openclaw/openclaw/pull/89104
 - PR #89135 draft=False fix(ui): render skill workshop tab — https://github.com/openclaw/openclaw/pull/89135
 - PR #88964 draft=False fix(agents): repair context-engine tool-result pairing — https://github.com/openclaw/openclaw/pull/88964
+
+## Historical compare completion — 2026-07-24
+
+The original packet was incomplete on compare-range classification. Final readback filled that gap:
+
+- Compare: `v2026.5.31-beta.4...v2026.6.1-beta.1`
+- Status: `diverged`
+- Ahead / behind: `52` / `4`
+- Files returned: `295`
+- Top-level changed-file counts: `extensions` 190, `src` 51, `test` 14, `scripts` 13, `ui` 12, `docs` 6, `apps` 5
+- PRs explicit in compare commit headlines: `#88998`, `#86953`
+- Other issue/PR watchlist rows remain signal-only unless independently proven in range.
+
+### Immutable target identity finding
+
+- Historical generated context recorded beta1 SHA `8ad3e55e588cec1f2c7b4a2c33e482797eb1af82`.
+- Current signed annotated beta1 tag points to commit `13dd4e3f2ece79ec8c736600cd596c3efbd7be9b`.
+- Current tagger timestamp: `2026-06-01T18:30:57Z`.
+- Corrected tester dispatch timestamp: `2026-06-01T18:21:04.649Z`.
+
+The target tag changed or was re-created after dispatch. Future freshness gates must pin and recheck tag name, dereferenced commit SHA, package version, and package digest.

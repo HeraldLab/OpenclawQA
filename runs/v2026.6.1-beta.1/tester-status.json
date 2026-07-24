@@ -1,23 +1,37 @@
 {
   "tag": "v2026.6.1-beta.1",
-  "collected_at": "2026-06-01T16:29:59Z",
+  "finalized_at": "2026-07-24T06:17:30Z",
   "repo": "HeraldLab/OpenclawQA",
-  "reports": [
+  "disposition": "SUPERSEDED_AFTER_DISPATCH_BEFORE_ACCEPTED_TESTER_SUBMISSION",
+  "assigned_testers": [
+    {
+      "name": "Mariam / Miriam Peter",
+      "discord_user_id": "1151723886971473971",
+      "dispatch_message_id": "1511072106908090378",
+      "acknowledged": true,
+      "accepted_submission": false,
+      "superseded_by_owner_message_id": "1511339958798123179"
+    }
+  ],
+  "accepted_human_reports": [],
+  "excluded_intake": [
     {
       "number": 1,
-      "title": "[Workflow smoke]: v2026.6.1-beta.1 collector/dedupe dry-run",
-      "url": "https://github.com/HeraldLab/OpenclawQA/issues/1",
-      "state": "closed",
-      "labels": [
-        "status:validated",
-        "area:install"
-      ],
-      "status": "status:validated",
-      "author": "h-mascot",
-      "created_at": "2026-06-01T16:25:15Z",
-      "updated_at": "2026-06-01T16:25:16Z",
-      "has_evidence": true,
-      "body_chars": 750
+      "decision": "EXCLUDE_WORKFLOW_SMOKE",
+      "reason": "Automation plumbing issue; not human product QA."
+    },
+    {
+      "number": 2,
+      "decision": "EXCLUDE_WRONG_TAG",
+      "reason": "Targets v2026.6.1-beta.3."
+    },
+    {
+      "number": 3,
+      "decision": "EXCLUDE_WRONG_TAG",
+      "reason": "Targets v2026.6.1-beta.3."
     }
-  ]
+  ],
+  "validated_findings": 0,
+  "upstream_issues_filed": 0,
+  "product_verdict": "UNKNOWN"
 }

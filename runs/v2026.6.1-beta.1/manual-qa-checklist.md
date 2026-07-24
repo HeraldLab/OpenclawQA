@@ -1,7 +1,7 @@
 # Manual QA Checklist — OpenClaw `v2026.6.1-beta.1`
 
-Status: **DRAFT — pending human sign-off before dispatch**  
-Freshness recheck: `2026-06-01T16:48:47Z`  
+Status: **APPROVED AND DISPATCHED 2026-06-01; CAMPAIGN SUPERSEDED BEFORE ACCEPTED SUBMISSION**
+Freshness recheck: `2026-06-01T18:09:06Z`
 Target: `v2026.6.1-beta.1`  
 Stable upgrade baseline: `v2026.5.28`  
 Prior prerelease baseline: `v2026.5.31-beta.4`

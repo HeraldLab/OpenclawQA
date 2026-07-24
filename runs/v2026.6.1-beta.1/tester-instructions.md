@@ -1,5 +1,7 @@
 # Tester Instructions — OpenClaw `v2026.6.1-beta.1`
 
+> **CANCELLED / SUPERSEDED. DO NOT DISPATCH.** This packet was sent on 2026-06-01 and superseded by beta2 before an accepted beta1 submission. See `closeout-report.md` and `supersession-evidence.md`.
+
 Generated: `2026-06-01T16:29:58Z`  
 Run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.1-beta.1  
 Upstream release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.1  

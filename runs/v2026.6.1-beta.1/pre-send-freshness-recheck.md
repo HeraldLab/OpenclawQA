@@ -1,5 +1,7 @@
 # Pre-send Freshness Recheck — OpenClaw `v2026.6.1-beta.1`
 
+> **Historical receipt — do not use for a new send.** The campaign was dispatched on 2026-06-01, then explicitly superseded before an accepted tester submission. Final recheck on `2026-07-24T06:17:30Z` found latest published prerelease `v2026.7.2-beta.3` and latest beta tag `v2026.7.2-beta.4`; beta1 must not be resumed.
+
 Checked at: `2026-06-01T16:48:47Z`
 
 ## Target decision

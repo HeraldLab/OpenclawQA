@@ -1,98 +1,42 @@
-# Human Review Packet — OpenClaw `v2026.6.1-beta.1` Manual QA Dispatch
+# Human Review Receipt — OpenClaw `v2026.6.1-beta.1`
 
-**Review this.**
+Finalized: `2026-07-24T06:17:30Z`
 
-## Decision requested
+This file began as the dispatch approval packet. The gate is now closed and archived.
 
-Approve or change the tester dispatch package for OpenClaw `v2026.6.1-beta.1`.
+## Material reviewed
 
-Reply with one of:
+1. Target freshness: `pre-send-freshness-recheck.md`
+2. Manual QA checklist: `manual-qa-checklist.md`
+3. Tester dispatch content: `tester-instructions.md`
 
-- `APPROVE DISPATCH`
-- `CHANGE: <specific edits>`
-- `BLOCK: <reason>`
+## Human decision
 
-If approved, Book should dispatch the tester instructions publicly and begin collecting real manual QA evidence.
+Status: **APPROVED**
 
-## What you need to review
+- Reviewer: Henry / HiM
+- Message ID: `1511068825477714261`
+- Timestamp: `2026-06-01T18:08:02.295Z`
+- Text: “this is reviewed and approved / lets send to Mariam”
+- Link: https://discord.com/channels/1508780411914813440/1510982876508979210/1511068825477714261
 
-You do **not** need to review the automation scripts or repo internals for this gate.
+## Dispatch result
 
-Review these three things:
+- Correct tester thread: `1510234021052026880`
+- Correct dispatch message: `1511072106908090378`
+- Timestamp: `2026-06-01T18:21:04.649Z`
+- Readback verified: yes
+- Link: https://discord.com/channels/1508780411914813440/1510234021052026880/1511072106908090378
 
-1. **Target freshness** — are we testing the right release?
-   - File: `pre-send-freshness-recheck.md`
-   - Current decision: target remains current; latest beta is `v2026.6.1-beta.1`.
+## Final campaign state
 
-2. **Manual QA checklist** — are these the right things to ask testers to run?
-   - File: `manual-qa-checklist.md`
-   - Includes install, stable upgrade, prior prerelease upgrade, first-run smoke, provider/model routing, messaging delivery, `message.send` leak/routing regression, plugin/tool visibility, memory/session persistence, UI send reset, sleep/reconnect, and diagnostics/secrets checks.
+The tester acknowledged the packet but did not submit a beta1 evidence bundle before beta2 replaced it. Henry explicitly superseded beta1 in message `1511339958798123179`.
 
-3. **Tester instructions / dispatch content** — is this acceptable to send publicly to testers?
-   - File: `tester-instructions.md`
-   - Requires screen recording, environment header, logs/screenshots, redaction, and one issue-worthy bug per finding.
+Final disposition: **SUPERSEDED — NO MANUAL QA VERDICT**
 
-## Links
+See:
 
-- Pre-send freshness recheck: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/pre-send-freshness-recheck.md
-- Manual QA checklist: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/manual-qa-checklist.md
-- Tester instructions: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/tester-instructions.md
-- Review gate report: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/review-gate-report.md
-- Status vs v4 workflow: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/workflow-status-vs-v4.md
-
-## Current status
-
-- Automation spine: built and verified.
-- Latest beta: `v2026.6.1-beta.1`.
-- Pre-send freshness recheck: passed at `2026-06-01T16:48:47Z`.
-- Checklist/review gates: draft passed.
-- Human sign-off: **pending**.
-- Tester dispatch: **not sent**.
-- Real manual QA evidence: **not collected yet**.
-
-## Proposed dispatch summary
-
-If approved, Book should send a public tester message that says:
-
-```markdown
-QA run open for `v2026.6.1-beta.1`.
-
-Review target/freshness:
-- Latest beta confirmed: `v2026.6.1-beta.1`
-- Release: https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.1
-- Full run folder: https://github.com/HeraldLab/OpenclawQA/tree/main/runs/v2026.6.1-beta.1
-- Checklist: https://github.com/HeraldLab/OpenclawQA/blob/main/runs/v2026.6.1-beta.1/manual-qa-checklist.md
-
-Please run the checklist with screen recording on.
-No repo write access is needed. Reply in Discord with the report; Herald Labs will dedupe and file validated upstream OpenClaw issues using our account.
-For every row, report: `PASS`, `FAIL`, `BLOCKED`, or `NOT RUN`.
-
-Required environment header:
-- OpenClaw version:
-- Operating system:
-- Install method:
-- Model:
-- Provider / routing chain:
-- Additional provider/model setup details:
-
-For each bug finding:
-- Bug type:
-- Beta release blocker:
-- Summary:
-- Steps to reproduce:
-- Expected behavior:
-- Actual behavior:
-- Logs, screenshots, and evidence:
-- Impact and severity:
-- Additional information:
-
-Rules:
-- One issue-worthy bug per finding.
-- Do not speculate.
-- Redact tokens/API keys/private URLs/customer data.
-- If a field cannot be answered from evidence, write `NOT_ENOUGH_INFO`.
-```
-
-## Known caveat
-
-The release-context packet is usable, but not perfect against the v4 ideal: changed-files / compare-range / confirmed-in-range classification is still partial. The checklist compensates with broad beta regression coverage and watchlist probes, but if you want strict v4 purity, ask for `CHANGE: complete compare-range classification first`.
+- `review-gate-report.md`
+- `adversarial-review.md`
+- `supersession-evidence.md`
+- `closeout-report.md`

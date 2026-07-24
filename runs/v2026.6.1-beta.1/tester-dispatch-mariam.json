@@ -21,7 +21,13 @@
     "readback_verified": true,
     "route_used": "Mariam actual Discord thread supplied by Henry"
   },
-  "response_status": "pending",
+  "response_status": "superseded_before_submission",
+  "final_disposition": {
+    "status": "SUPERSEDED_AFTER_DISPATCH_BEFORE_ACCEPTED_TESTER_SUBMISSION",
+    "superseded_at": "2026-06-02T12:05:25.516000+00:00",
+    "owner_message_id": "1511339958798123179",
+    "reason": "Henry said the old beta1 packet was no longer useful and directed focus to beta2."
+  },
   "access_reporting_clarification": {
     "sent": true,
     "thread_id": "1510234021052026880",

@@ -1,52 +1,41 @@
-# Review Gate Report — OpenClaw `v2026.6.1-beta.1`
+# Final Review Gate Report — OpenClaw `v2026.6.1-beta.1`
 
-Generated: `2026-06-01T16:48:47Z`
+Finalized: `2026-07-24T06:17:30Z`
 
-## 1. Coverage pass
+## Coverage pass
 
-Status: **PASS for dispatch draft, pending human sign-off**
+Status: **PASS WITH CAVEAT**
 
-Coverage included:
+The checklist covered install/upgrade, first response, provider/model routing, messaging delivery, tool sanitization/routing bleed, plugins/tools, exec metadata, memory/session persistence, UI reset, reconnect recovery, diagnostics, and secret redaction.
 
-- exact target tag `v2026.6.1-beta.1`
-- stable upgrade from `v2026.5.28`
-- prior prerelease upgrade from `v2026.5.31-beta.4`
-- fresh install
-- first-run smoke
-- provider/model routing
-- Discord/Telegram delivery
-- `message.send` sanitization / `chat_id` bleed watchlist
-- plugin/tool visibility
-- memory/session persistence
-- UI composer send/reset behavior
-- diagnostics/secrets redaction
+Historical compare completion found 52 target-side commits and 295 changed files. Exact PR confirmation from compare commit headlines is limited to `#88998` and `#86953`; other watchlist items remain signals unless independently proven.
 
-## 2. Adversarial pass
+## Adversarial pass
 
-Status: **PASS for draft**
+Status: **PASS; PROCESS DEFECTS FOUND**
 
-Adversarial probes included:
+Covered weak-model leakage, wrong-channel routing, reconnect/sleep, duplicate service/session state, silent plugin/tool omission, bad diagnostics, and secret leakage.
 
-- weak-model routing/tool argument leak path
-- wrong channel / `chat_id` routing bleed
-- sleep/wake or disconnect/reconnect
-- duplicate session/service confusion after upgrade
-- tool/plugin silent omission
-- diagnostics leaking secrets
+Process defects:
 
-## 3. Clarity pass
+- target tag identity changed/re-created after dispatch;
+- beta1 and beta2 packets overlapped without immediate beta1 cancellation.
 
-Status: **PASS for draft**
+## Clarity pass
 
-Clarity fixes applied:
+Status: **PASS FOR TEST ROWS; CAVEAT FOR CAMPAIGN STATE**
 
-- every checklist row has preconditions, action, expected result, evidence, and priority
-- tester status vocabulary is fixed to `PASS`, `FAIL`, `BLOCKED`, `NOT RUN`
-- missing facts must use `NOT_ENOUGH_INFO`
-- one issue-worthy bug per finding block
+Rows had fixed statuses, expected results, evidence, and redaction rules. The packet lacked an expiry/cancelled state, which led the tester to ask whether beta1 or beta2 should be run.
 
-## 4. Human review gate
+## Human review gate
 
-Status: **PENDING**
+Status: **CONFIRMED**
 
-Tester dispatch must not happen until Henry or an assigned human reviewer signs off.
+- Approver: Henry / HiM
+- Message: `1511068825477714261`
+- Timestamp: `2026-06-01T18:08:02.295Z`
+- Text: “this is reviewed and approved / lets send to Mariam”
+
+## Final result
+
+Tester dispatch was allowed and completed. No beta1 tester submission landed before explicit owner supersession. Review-gate completion is not a product QA pass.

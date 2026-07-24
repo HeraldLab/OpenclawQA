@@ -1,6 +1,6 @@
 # Tester Dispatch Receipt — Mariam — OpenClaw `v2026.6.1-beta.1`
 
-Status: **sent to correct Mariam thread, awaiting report**
+Status: **sent to correct Mariam thread; superseded before accepted beta1 submission**
 
 ## Approval
 
@@ -48,6 +48,8 @@ The correct message includes:
 - optional public QA issue form
 - do not file directly into `openclaw/openclaw` unless asked
 
-## Next required action
+## Final disposition
 
-Wait for Mariam to reply with report or blocker. If no response within the SLA window from the corrected resend, send one concise follow-up or escalate according to the HeraldLabs tester SLA.
+Mariam acknowledged the beta1 packet but did not submit an accepted evidence bundle before beta2 replaced it. Henry explicitly superseded beta1 in Discord message `1511339958798123179` at `2026-06-02T12:05:25.516Z` and directed focus to the new packet.
+
+Final status: `SUPERSEDED_AFTER_DISPATCH_BEFORE_ACCEPTED_TESTER_SUBMISSION`. No further beta1 follow-up or redispatch is allowed.

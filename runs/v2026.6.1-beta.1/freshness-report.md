@@ -1,5 +1,7 @@
 # Freshness Report
 
+> **Historical trigger-time receipt.** It was accurate for the 2026-06-01 run window only. Final recheck on `2026-07-24T06:17:30Z` found latest published prerelease `v2026.7.2-beta.3` and latest beta tag `v2026.7.2-beta.4`; the beta1 campaign is superseded and must not be resumed.
+
 Target tag: `v2026.6.1-beta.1`
 
 Target exists upstream: **yes**
