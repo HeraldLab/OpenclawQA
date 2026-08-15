@@ -1,0 +1,2 @@
+# Evidence Manifest — `v2026.8.1-beta.2`
+
