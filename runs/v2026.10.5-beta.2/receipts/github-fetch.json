@@ -1,0 +1,486 @@
+{
+  "fetched_at": "2026-10-12T12:30:42Z",
+  "target_tag": "v2026.10.5-beta.2",
+  "target_exists": true,
+  "target_release_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.2",
+  "target_tag_sha": "467e83dea27c0d9ade8e999d688de2ed656b2225",
+  "latest_beta": "v2026.10.5-beta.2",
+  "latest_alpha": "v2026.6.21-alpha.1",
+  "stable_baseline": "v2026.10.2",
+  "prior_prerelease_baseline": "v2026.10.5-beta.1",
+  "release_count_checked": 100,
+  "tag_count_checked": 100,
+  "issue_count_checked": 2,
+  "pr_count_checked": 30,
+  "recent_releases": [
+    {
+      "tag_name": "v2026.10.5-beta.2",
+      "name": "openclaw 2026.10.5-beta.2",
+      "prerelease": true,
+      "published_at": "2026-10-12T12:10:48Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.2"
+    },
+    {
+      "tag_name": "v2026.10.2",
+      "name": "openclaw 2026.10.2",
+      "prerelease": false,
+      "published_at": "2026-10-12T05:34:44Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.2"
+    },
+    {
+      "tag_name": "v2026.10.5-beta.1",
+      "name": "openclaw 2026.10.5-beta.1",
+      "prerelease": true,
+      "published_at": "2026-10-11T13:08:24Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.1"
+    },
+    {
+      "tag_name": "v2026.10.1",
+      "name": "openclaw 2026.10.1",
+      "prerelease": false,
+      "published_at": "2026-10-10T23:54:03Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1"
+    },
+    {
+      "tag_name": "v2026.9.9",
+      "name": "openclaw 2026.9.9",
+      "prerelease": false,
+      "published_at": "2026-10-08T10:23:23Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9"
+    },
+    {
+      "tag_name": "v2026.10.1-beta.2",
+      "name": "openclaw 2026.10.1-beta.2",
+      "prerelease": true,
+      "published_at": "2026-10-08T00:41:22Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2"
+    },
+    {
+      "tag_name": "v2026.10.1-beta.1",
+      "name": "openclaw 2026.10.1-beta.1",
+      "prerelease": true,
+      "published_at": "2026-10-05T19:47:49Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1"
+    },
+    {
+      "tag_name": "v2026.9.8",
+      "name": "openclaw 2026.9.8",
+      "prerelease": false,
+      "published_at": "2026-10-03T03:21:47Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8"
+    },
+    {
+      "tag_name": "v2026.8.35",
+      "name": "openclaw 2026.8.35",
+      "prerelease": false,
+      "published_at": "2026-10-02T14:06:34Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35"
+    },
+    {
+      "tag_name": "v2026.8.34",
+      "name": "openclaw 2026.8.34",
+      "prerelease": false,
+      "published_at": "2026-10-02T00:12:39Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34"
+    },
+    {
+      "tag_name": "v2026.9.7",
+      "name": "openclaw 2026.9.7",
+      "prerelease": false,
+      "published_at": "2026-09-30T04:44:14Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7"
+    },
+    {
+      "tag_name": "v2026.8.33",
+      "name": "openclaw 2026.8.33",
+      "prerelease": false,
+      "published_at": "2026-09-29T03:12:00Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33"
+    },
+    {
+      "tag_name": "v2026.9.6",
+      "name": "openclaw 2026.9.6",
+      "prerelease": false,
+      "published_at": "2026-09-23T23:21:10Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6"
+    },
+    {
+      "tag_name": "v2026.7.35",
+      "name": "openclaw 2026.7.35",
+      "prerelease": false,
+      "published_at": "2026-09-21T13:14:04Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35"
+    },
+    {
+      "tag_name": "v2026.9.5",
+      "name": "openclaw 2026.9.5",
+      "prerelease": false,
+      "published_at": "2026-09-19T01:55:23Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5"
+    },
+    {
+      "tag_name": "linux-stable",
+      "name": "OpenClaw Linux update channel",
+      "prerelease": true,
+      "published_at": "2026-09-19T05:00:44Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/linux-stable"
+    },
+    {
+      "tag_name": "v2026.9.4",
+      "name": "openclaw 2026.9.4",
+      "prerelease": false,
+      "published_at": "2026-09-11T03:46:22Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4"
+    },
+    {
+      "tag_name": "v2026.6.35",
+      "name": "openclaw 2026.6.35",
+      "prerelease": false,
+      "published_at": "2026-09-10T06:39:30Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.35"
+    },
+    {
+      "tag_name": "v2026.9.3",
+      "name": "openclaw 2026.9.3",
+      "prerelease": false,
+      "published_at": "2026-09-08T14:15:53Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3"
+    },
+    {
+      "tag_name": "v2026.9.2",
+      "name": "openclaw 2026.9.2",
+      "prerelease": false,
+      "published_at": "2026-09-05T20:00:07Z",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2"
+    }
+  ],
+  "recent_tags": [
+    {
+      "name": "v2026.10.5-beta.2",
+      "sha": "467e83dea27c0d9ade8e999d688de2ed656b2225"
+    },
+    {
+      "name": "v2026.10.5-beta.1",
+      "sha": "f283c3c71226c2e1d9ca06b11972f8bdb3969bd8"
+    },
+    {
+      "name": "v2026.10.2",
+      "sha": "b8952d477f0c932d8ddc6da5c89cab5a169b6ff1"
+    },
+    {
+      "name": "v2026.10.1",
+      "sha": "e178c39e9aae3fa440735217f9aef9574f286677"
+    },
+    {
+      "name": "v2026.10.1-beta.2",
+      "sha": "c58cf3afa0793257a8127ae868d5e159da6d9d0a"
+    },
+    {
+      "name": "v2026.10.1-beta.1",
+      "sha": "6830fe76b3db05ad59e8ff7f0f872d4e2639a1fe"
+    },
+    {
+      "name": "v2026.9.9",
+      "sha": "bcfc88812a35243893585dbeca87ca41b48272ca"
+    },
+    {
+      "name": "v2026.9.8",
+      "sha": "fc23bc864e4553c2d215e479eeec47b67a0bf943"
+    },
+    {
+      "name": "v2026.9.7",
+      "sha": "c074824a27c96d3983043f9eeb33823cd1772d8c"
+    },
+    {
+      "name": "v2026.9.6",
+      "sha": "eb377ac59e6c9fd6c7705028034812becf00271b"
+    },
+    {
+      "name": "v2026.9.5",
+      "sha": "ec9c1a13db8938e5a3eaa51fca2e981cde2395a9"
+    },
+    {
+      "name": "v2026.9.4",
+      "sha": "3a9d69db306cd7f081e06254cb89c4bcc14a7107"
+    },
+    {
+      "name": "v2026.9.3",
+      "sha": "1391f7cd2d40ab5bbcf2f5f831d3a64f520e72d7"
+    },
+    {
+      "name": "v2026.9.2",
+      "sha": "3928bad9badfcb6c7d140530435e806fb8092190"
+    },
+    {
+      "name": "v2026.9.1",
+      "sha": "ad6fe23aecb9b833d68139b0ddc9f239b894d2f1"
+    },
+    {
+      "name": "v2026.9.1-beta.1",
+      "sha": "1d96e5aee2d49cde999ed055eda113e2523a7b5c"
+    },
+    {
+      "name": "v2026.8.35",
+      "sha": "713ba5785d72d6ed1cec971e21307f16cc4234a6"
+    },
+    {
+      "name": "v2026.8.34",
+      "sha": "d21cb744af45bc4d29352750c5e1e7f1cf7f066a"
+    },
+    {
+      "name": "v2026.8.33",
+      "sha": "f773aa06a1a93b36b050f1a3f4b57d3d91311541"
+    },
+    {
+      "name": "v2026.8.2",
+      "sha": "0965053fe6b9341776df147a6934b7485c60b5ca"
+    },
+    {
+      "name": "v2026.8.1",
+      "sha": "ea806575e6450e4d1efdfc72c19f04be982a1b9b"
+    },
+    {
+      "name": "v2026.8.1-beta.3",
+      "sha": "5831b80721f802072b0ec1893b30a16cf42d538c"
+    },
+    {
+      "name": "v2026.8.1-beta.2",
+      "sha": "8f382a202ff1e15833394b481615dcdda99b04d7"
+    },
+    {
+      "name": "v2026.8.1-beta.1",
+      "sha": "ff8a3fe9d03eff4a70f5464714c3a389b06bfec8"
+    },
+    {
+      "name": "v2026.7.35",
+      "sha": "aa94808cb05668cdf1c10bc8f034a8176deba483"
+    },
+    {
+      "name": "v2026.7.34",
+      "sha": "0847c47f4451569148e5ef1789be771416ff7b11"
+    },
+    {
+      "name": "v2026.7.33",
+      "sha": "b60a4e9fa97cddf1869a1866d879b3051783cf12"
+    },
+    {
+      "name": "v2026.7.2-beta.7",
+      "sha": "dabe1915362e20c25704af91612a32a8f4c96e83"
+    },
+    {
+      "name": "v2026.7.2-beta.6",
+      "sha": "4d6bdbdbf33fe3ece3c53853fab9931882ff3f3c"
+    },
+    {
+      "name": "v2026.7.2-beta.5",
+      "sha": "ee929dbb857c717a60f3b2b502db5a6dd31b5c11"
+    }
+  ],
+  "recent_issues": [
+    {
+      "number": 169882,
+      "title": "[Bug]: macOS app node system.run uses launchd's bare PATH when OpenClaw.app is opened from Finder/Dock",
+      "url": "https://github.com/openclaw/openclaw/issues/169882",
+      "labels": [
+        "no-stale",
+        "P2",
+        "clawsweeper:fix-shape-clear",
+        "clawsweeper:queueable-fix",
+        "clawsweeper:source-repro",
+        "issue-rating: \ud83e\udd9e diamond lobster",
+        "impact:ux-friction"
+      ]
+    },
+    {
+      "number": 169883,
+      "title": "[Bug]: Control UI: invalid chat.send params: unexpected property '__controlUiReconnectResume' after WebSocket reconnect",
+      "url": "https://github.com/openclaw/openclaw/issues/169883",
+      "labels": [
+        "bug",
+        "regression"
+      ]
+    }
+  ],
+  "recent_prs": [
+    {
+      "number": 156484,
+      "title": "feat(qa): compare recorded Decision answers offline",
+      "url": "https://github.com/openclaw/openclaw/pull/156484",
+      "draft": false
+    },
+    {
+      "number": 169714,
+      "title": "refactor(runtime): prepare config, auth, and session facts asynchronously",
+      "url": "https://github.com/openclaw/openclaw/pull/169714",
+      "draft": false
+    },
+    {
+      "number": 89826,
+      "title": "feat(chat): UX-012 \u2014 token usage progress meter",
+      "url": "https://github.com/openclaw/openclaw/pull/89826",
+      "draft": false
+    },
+    {
+      "number": 169757,
+      "title": "perf(sessions): move target lookups and callers to workers",
+      "url": "https://github.com/openclaw/openclaw/pull/169757",
+      "draft": false
+    },
+    {
+      "number": 125286,
+      "title": "fix(install): keep Windows Git installs on the validated Node runtime",
+      "url": "https://github.com/openclaw/openclaw/pull/125286",
+      "draft": false
+    },
+    {
+      "number": 167585,
+      "title": "fix: tools.effective drops tool-only plugin tools when the inventory lease scopes its runtime generation",
+      "url": "https://github.com/openclaw/openclaw/pull/167585",
+      "draft": false
+    },
+    {
+      "number": 168852,
+      "title": "refactor: migrate sidebar rendering to Solid 2",
+      "url": "https://github.com/openclaw/openclaw/pull/168852",
+      "draft": false
+    },
+    {
+      "number": 169696,
+      "title": "refactor(ui): own shared control theme tokens",
+      "url": "https://github.com/openclaw/openclaw/pull/169696",
+      "draft": false
+    },
+    {
+      "number": 169884,
+      "title": "fix(macos): prevent discovery startup from crashing on transient bundles",
+      "url": "https://github.com/openclaw/openclaw/pull/169884",
+      "draft": false
+    },
+    {
+      "number": 169485,
+      "title": "fix(windows): rely on fs-safe 0.26.2 for long private paths",
+      "url": "https://github.com/openclaw/openclaw/pull/169485",
+      "draft": false
+    },
+    {
+      "number": 169622,
+      "title": "refactor: move bundled session reads and authority into workers",
+      "url": "https://github.com/openclaw/openclaw/pull/169622",
+      "draft": false
+    },
+    {
+      "number": 163435,
+      "title": "feat(snowflake): add Cortex local application OAuth",
+      "url": "https://github.com/openclaw/openclaw/pull/163435",
+      "draft": true
+    },
+    {
+      "number": 169867,
+      "title": "fix(gateway): Control UI rejects /workspace file links written by sandboxed agents",
+      "url": "https://github.com/openclaw/openclaw/pull/169867",
+      "draft": false
+    },
+    {
+      "number": 169363,
+      "title": "refactor(sessions): activate memory-only incognito actors",
+      "url": "https://github.com/openclaw/openclaw/pull/169363",
+      "draft": false
+    },
+    {
+      "number": 163423,
+      "title": "fix: final reply survives equivalent channel registry reload",
+      "url": "https://github.com/openclaw/openclaw/pull/163423",
+      "draft": false
+    },
+    {
+      "number": 169063,
+      "title": "perf(agents): remove automatic tool payload secret masking",
+      "url": "https://github.com/openclaw/openclaw/pull/169063",
+      "draft": false
+    },
+    {
+      "number": 169858,
+      "title": "fix(sessions): preserve facts across unrelated writes",
+      "url": "https://github.com/openclaw/openclaw/pull/169858",
+      "draft": false
+    },
+    {
+      "number": 101441,
+      "title": "fix(zalouser): sanitize outbound tool traces",
+      "url": "https://github.com/openclaw/openclaw/pull/101441",
+      "draft": false
+    },
+    {
+      "number": 169857,
+      "title": "fix(agents): replies waiting on operator approval are reclaimed as stalled",
+      "url": "https://github.com/openclaw/openclaw/pull/169857",
+      "draft": false
+    },
+    {
+      "number": 158067,
+      "title": "fix: deliver background results to WebChat-only sessions",
+      "url": "https://github.com/openclaw/openclaw/pull/158067",
+      "draft": false
+    },
+    {
+      "number": 169874,
+      "title": "refactor(ui): consolidate shared presentation",
+      "url": "https://github.com/openclaw/openclaw/pull/169874",
+      "draft": false
+    },
+    {
+      "number": 168612,
+      "title": "refactor(ui): render the app shell and retained routes with Solid",
+      "url": "https://github.com/openclaw/openclaw/pull/168612",
+      "draft": false
+    },
+    {
+      "number": 124867,
+      "title": "fix(ui): remove archived sessions from sidebar immediately",
+      "url": "https://github.com/openclaw/openclaw/pull/124867",
+      "draft": false
+    },
+    {
+      "number": 169843,
+      "title": "fix: chat turns fail when session receipts exceed transport limits",
+      "url": "https://github.com/openclaw/openclaw/pull/169843",
+      "draft": false
+    },
+    {
+      "number": 169128,
+      "title": "feat(ui): use native Solid overlays and tabs",
+      "url": "https://github.com/openclaw/openclaw/pull/169128",
+      "draft": false
+    },
+    {
+      "number": 169782,
+      "title": "fix: Codex byte-triggered compaction ignores the configured summary model",
+      "url": "https://github.com/openclaw/openclaw/pull/169782",
+      "draft": false
+    },
+    {
+      "number": 124642,
+      "title": "feat(feishu): add organization event bridge",
+      "url": "https://github.com/openclaw/openclaw/pull/124642",
+      "draft": false
+    },
+    {
+      "number": 169864,
+      "title": "feat(feishu): show queued and confirmed processing feedback",
+      "url": "https://github.com/openclaw/openclaw/pull/169864",
+      "draft": false
+    },
+    {
+      "number": 169854,
+      "title": "fix: avoid repeated database validation during memory indexing",
+      "url": "https://github.com/openclaw/openclaw/pull/169854",
+      "draft": false
+    },
+    {
+      "number": 169763,
+      "title": "fix(state): complete async SDK auth and plugin discovery cutovers",
+      "url": "https://github.com/openclaw/openclaw/pull/169763",
+      "draft": false
+    }
+  ]
+}
